@@ -1,17 +1,24 @@
 {
-  "name": "Oracle XE & ORDS/APEX",
-  "dockerComposeFile": "./docker-compose.yml",
-  "service": "esd-database",
-  "runServices": ["esd-database", "mission-app"],
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
-  "remoteEnv": {
-    "ORACLE_PASSWORD": "${localEnv:ORACLE_PASSWORD}",
-    "DOCKER_REGISTRY_USERNAME": "${localEnv:DOCKER_REGISTRY_USERNAME}",
-    "DOCKER_REGISTRY_PASSWORD": "${localEnv:DOCKER_REGISTRY_PASSWORD}",
-    "CONN_STRING": "${localEnv:CONN_STRING}"
-  },
-  "postCreateCommand": "./setup.sh && echo $DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $DOCKER_REGISTRY_USERNAME --password-stdin"
+    "name": "My Oracle-Apex Space",
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },
+    "workspaceFolder": "/app",
+    "forwardPorts": [1521, 8181, 8000, 35729, 3000, 1313],
+    "postCreateCommand": [
+        "./setup_script.sh",
+        "echo $DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $DOCKER_REGISTRY_USERNAME --password-stdin"
+    ],
+    "postStartCommand": "cd /app && docker-compose start",
+    "runArgs": ["--volume=/var/lib/docker", "--privileged"],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "remoteEnv": {
+        "ORACLE_PASSWORD": "${localEnv:ORACLE_PASSWORD}",
+        "DOCKER_REGISTRY_USERNAME": "${localEnv:DOCKER_REGISTRY_USERNAME}",
+        "DOCKER_REGISTRY_PASSWORD": "${localEnv:DOCKER_REGISTRY_PASSWORD}",
+        "CONN_STRING": "${localEnv:CONN_STRING}"
+    }
 }
 

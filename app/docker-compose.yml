@@ -22,7 +22,7 @@ services:
       esd-database:
         condition: service_healthy
     volumes:
-      - ./ords_variables:/opt/oracle/variables
+      - ./ords_secrets:/opt/oracle/variables
       - ./ords_config:/etc/ords/config
     ports:
       - 8181:8181
@@ -30,6 +30,7 @@ services:
     environment:
       - DOCKER_REGISTRY_USERNAME=${DOCKER_REGISTRY_USERNAME}
       - DOCKER_REGISTRY_PASSWORD=${DOCKER_REGISTRY_PASSWORD}
+      - CONN_STRING=${CONN_STRING}
 networks:
   default:
     name: esd-database-network
