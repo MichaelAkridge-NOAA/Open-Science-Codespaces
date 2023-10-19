@@ -1,0 +1,17 @@
+{
+  "name": "Oracle XE & ORDS/APEX",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "esd-database",
+  "runServices": ["esd-database", "mission-app"],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "remoteEnv": {
+    "ORACLE_PASSWORD": "${localEnv:ORACLE_PASSWORD}",
+    "DOCKER_REGISTRY_USERNAME": "${localEnv:DOCKER_REGISTRY_USERNAME}",
+    "DOCKER_REGISTRY_PASSWORD": "${localEnv:DOCKER_REGISTRY_PASSWORD}",
+    "CONN_STRING": "${localEnv:CONN_STRING}"
+  },
+  "postCreateCommand": "./setup.sh && echo $DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $DOCKER_REGISTRY_USERNAME --password-stdin"
+}
+
