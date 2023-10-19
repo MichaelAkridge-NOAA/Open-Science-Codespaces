@@ -13,8 +13,8 @@ dockerd &
 sleep 5
 
 # Bring up your services using docker-compose
-docker-compose up -d
-#docker-compose -f /app/docker-compose.yml up -d
+#docker-compose up -d
+docker-compose -f /app/docker-compose.yml up -d
 
 # Stop all running containers after setup (can be removed if you want the services to keep running)
 #docker-compose stop
