@@ -12,7 +12,7 @@
     "postStartCommand": "cd /app && docker-compose start",
     "runArgs": ["--volume=/var/lib/docker", "--privileged"],
     "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
+        "terminal.integrated.shell.linux": "/bin/sh"
     },
     "remoteEnv": {
         "ORACLE_PASSWORD": "${localEnv:ORACLE_PASSWORD}",

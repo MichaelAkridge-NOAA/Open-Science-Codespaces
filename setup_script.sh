@@ -19,7 +19,7 @@ dockerd &
 sleep 7
 
 # Bring up your services using docker-compose
-#docker-compose up
+docker-compose up
 
 # Stop all running containers after setup (can be removed if you want the services to keep running)
 #docker-compose stop
