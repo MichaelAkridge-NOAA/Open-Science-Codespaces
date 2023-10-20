@@ -1,12 +1,7 @@
 #!/bin/bash
 
-# Set up ORDS secrets
-mkdir -p /app/ords_secrets
-mkdir -p /app/ords_config
-mkdir -p /app/db-vol
-chmod -R 777 /app/db-vol
-chmod -R 777 /app/ords_config
-chmod -R 777 /app/ords_secrets
+touch /app/started.txt
+
 echo $CONN_STRING > /app/ords_secrets/conn_string.txt
 
 # Navigate to the app directory
@@ -26,3 +21,7 @@ docker-compose up
 
 # Stop all running containers after setup (can be removed if you want the services to keep running)
 #docker-compose stop
+
+echo "setup completed."
+
+touch /app/done.txt

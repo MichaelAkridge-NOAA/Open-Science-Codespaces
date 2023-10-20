@@ -7,13 +7,17 @@ RUN apk add --no-cache docker-engine
 RUN apk add --no-cache docker-cli
 RUN apk add --no-cache docker-compose
 
-# Add your application files
+# Add your application files/folders
 ADD ./app /app
-ADD ./.devcontainer /app/.devcontainer
-ADD ./.devcontainer /.devcontainer
-# If needed, make the script executable
+mkdir -p /app/ords_secrets
+mkdir -p /app/ords_config
+mkdir -p /app/db-vol
+chmod -R 777 /app/db-vol
+chmod -R 777 /app/ords_config
+chmod -R 777 /app/ords_secrets
+
+# Make the script executable
 RUN chmod +x /app/setup_script.sh
-RUN chmod +x /app/.devcontainer/postCreate.sh
 
 EXPOSE 1521 8181
 
