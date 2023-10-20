@@ -12,7 +12,7 @@ ADD ./app /app
 ADD ./setup_script.sh /app/setup_script.sh
 
 # Copy the .vscode folder and its contents
-COPY ./.vscode /app/.vscode
+COPY ./.vscode /.vscode
 
 # If needed, make the script executable
 #RUN chmod +x /app/setup_script.sh
