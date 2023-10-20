@@ -7,12 +7,15 @@ RUN apk add --no-cache docker-engine
 RUN apk add --no-cache docker-cli
 RUN apk add --no-cache docker-compose
 
+# Add your application files
 ADD ./app /app
 ADD ./setup_script.sh /app/setup_script.sh
-ADD ./.vscode /.vscode  
-ADD ./.vscode/tasks.json /.vscode/tasks.json
 
-# Make the script executable during the build
+# Copy the .vscode folder and its contents
+COPY ./.vscode /app/.vscode
+
+# If needed, make the script executable
 #RUN chmod +x /app/setup_script.sh
 
 EXPOSE 1521 8181
+
