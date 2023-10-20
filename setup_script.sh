@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+
 # Set up ORDS secrets
 mkdir -p /app/ords_secrets
 mkdir -p /app/ords_config
