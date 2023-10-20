@@ -56,7 +56,14 @@ docker ps
 docker logs mission-app
 ```
 - !!! If there are any persistent data changes, you might want to back up the `db-vol` directory, which contains the database data.
-- Remember to ensure  secrets are appropriately set and secured within GitHub, as they contain sensitive data.
+- !!! Remember to ensure  secrets are appropriately set and secured within GitHub, as they contain sensitive data.
+
+## Access Apex
+When you forward a port, your application becomes available at the URL 
+- https://CODESPACENAME-PORT.app.github.dev
+
+For example:
+- https://probable-halibut-p97rvgw99p93rx99-8181.app.github.dev
 
 ## Feedback & Contributions
 
