@@ -1,6 +1,8 @@
 FROM alpine:3.15.4
 
 RUN apk update
+RUN apt-get update && apt-get install -y bash && rm -rf /var/lib/apt/lists/*
+
 RUN apk add --no-cache git
 RUN apk add --no-cache docker-engine
 RUN apk add --no-cache docker-cli
