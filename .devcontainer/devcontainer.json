@@ -4,7 +4,8 @@
         "dockerfile": "../Dockerfile"
     },
     "workspaceFolder": "/app",
-    "forwardPorts": [1521, 8181, 8000, 35729, 3000, 1313],
+    "forwardPorts": [1521, 8181],
+    "portsAttributes": {"1521": {"label": "oracle-xe"},"8181": {"label": "apex-app"}},
     "postCreateCommand": [
         "/app/setup_script.sh",
         "echo $DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $DOCKER_REGISTRY_USERNAME --password-stdin"

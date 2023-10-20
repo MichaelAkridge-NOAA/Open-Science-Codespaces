@@ -13,4 +13,4 @@ ADD ./setup_script.sh /app/setup_script.sh
 # Make the script executable during the build
 RUN chmod +x /app/setup_script.sh
 
-EXPOSE 1521 8181 8000 35729 3000 1313
+EXPOSE 1521 8181
