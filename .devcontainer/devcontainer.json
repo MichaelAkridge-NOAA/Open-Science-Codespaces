@@ -10,7 +10,6 @@
         "/app/setup_script.sh",
         "echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin"
     ],
-    "postStartCommand": "cd /app && docker-compose start && code --folder-uri /app -r",
     "runArgs": ["--volume=/var/lib/docker", "--privileged"],
     "settings": {
         "terminal.integrated.shell.linux": "/bin/sh"
