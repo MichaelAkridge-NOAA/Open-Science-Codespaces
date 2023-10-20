@@ -6,10 +6,7 @@
     "workspaceFolder": "/app",
     "forwardPorts": [1521, 8181],
     "portsAttributes": {"1521": {"label": "oracle-free"},"8181": {"label": "ords-apex"}},
-    "postCreateCommand": [
-        "/app/setup_script.sh",
-        "echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin"
-    ],
+    "postCreateCommand": ".devcontainer/postCreate.sh",
     "runArgs": ["--volume=/var/lib/docker", "--privileged"],
     "settings": {
         "terminal.integrated.shell.linux": "/bin/sh"
