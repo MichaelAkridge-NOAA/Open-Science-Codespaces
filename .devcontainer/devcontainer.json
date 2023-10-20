@@ -9,7 +9,7 @@
     "postCreateCommand": ".devcontainer/postCreate.sh",
     "runArgs": ["--volume=/var/lib/docker", "--privileged"],
     "settings": {
-        "terminal.integrated.shell.linux": "/bin/sh"
+        "terminal.integrated.shell.linux": "/bin/bash"
     },
     "remoteEnv": {
         "ORACLE_PASSWORD": "${localEnv:ORACLE_PASSWORD}",
