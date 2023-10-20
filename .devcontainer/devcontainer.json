@@ -1,14 +1,14 @@
 {
-    "name": "My Oracle-Apex Space",
+    "name": "Oracle-Free-Apex Space",
     "build": {
         "dockerfile": "../Dockerfile"
     },
     "workspaceFolder": "/app",
     "forwardPorts": [1521, 8181],
-    "portsAttributes": {"1521": {"label": "oracle-xe"},"8181": {"label": "apex-app"}},
+    "portsAttributes": {"1521": {"label": "oracle-free"},"8181": {"label": "ords-apex"}},
     "postCreateCommand": [
         "/app/setup_script.sh",
-        "echo $DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $DOCKER_REGISTRY_USERNAME --password-stdin"
+        "echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin"
     ],
     "postStartCommand": "cd /app && docker-compose start",
     "runArgs": ["--volume=/var/lib/docker", "--privileged"],
@@ -17,8 +17,8 @@
     },
     "remoteEnv": {
         "ORACLE_PASSWORD": "${localEnv:ORACLE_PASSWORD}",
-        "DOCKER_REGISTRY_USERNAME": "${localEnv:DOCKER_REGISTRY_USERNAME}",
-        "DOCKER_REGISTRY_PASSWORD": "${localEnv:DOCKER_REGISTRY_PASSWORD}",
+        "ORACLE_DOCKER_REGISTRY_USERNAME": "${localEnv:ORACLE_DOCKER_REGISTRY_USERNAME}",
+        "ORACLE_DOCKER_REGISTRY_PASSWORD": "${localEnv:ORACLE_DOCKER_REGISTRY_PASSWORD}",
         "CONN_STRING": "${localEnv:CONN_STRING}"
     }
 }

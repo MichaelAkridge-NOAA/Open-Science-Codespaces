@@ -1,12 +1,14 @@
-# Oracle & Apex using Github Codespace Setup
+# Oracle Free Database & ORDS-Apex using Github Codespace Setup
 
-This Codespace sets up a Docker-based Oracle XE and ORDS/Apex application. The configs are defined in the `devcontainer.json` and associated Docker and Docker Compose files.
+This Codespace sets up a Docker-based Oracle Free(or XE, etc) and ORDS/Apex application. Configs are defined in the `devcontainer.json` file & associated Docker and Docker Compose files.
 
 ## Quick Start
 
 1. Clone the repository.
-2. Navigate to the repository folder and open the codespace.
-3. The codespace will initialize itself by building the container based on the provided Dockerfile and start the services based on the `docker-compose.yml` file.
+2. Navigate to Github codespace.
+	- https://github.com/codespaces
+3. Select 'New Codespace' and repository cloned in step 1.
+4. The codespace will initialize itself by building the container based on the provided Dockerfile and start the services based on the `docker-compose.yml` file.
 
 ## Configuration Breakdown
 
@@ -16,11 +18,11 @@ This Codespace sets up a Docker-based Oracle XE and ORDS/Apex application. The c
   
 - **Workspace**: Sets up `/app` as the default directory.
   
-- **Ports**: Several ports are forwarded for access outside the container, including Oracle's port (`1521`) and the Apex port (`8181`).
+- **Ports**: A couple ports are forwarded for access outside the container, including Oracle's port (`1521`) and the ORDS/Apex port (`8181`).
   
-- **Commands**: After the container is created, a setup script is executed (`/app/setup_script.sh`) and the Docker registry is logged into using the provided credentials.
+- **Commands**: After the container is created, a setup script is executed (`/app/setup_script.sh`) and the Docker registry is logged into using the provided credentials. Install takes time(~20mins). 
   
-- **Environment Variables**: Environmental variables for Oracle and Docker registry are taken from the local repo secrets environment.
+- **Environment Variables**: Environmental variables for Oracle DB, and Oracle registry are taken from the local repo secrets environment.
 
 ### Dockerfile
 
@@ -28,19 +30,19 @@ This Codespace sets up a Docker-based Oracle XE and ORDS/Apex application. The c
   
 - **Packages**: Installs essential tools including bash, git, Docker, and Docker Compose.
   
-- **Application Setup**: Copies the application files and setup script into the container and makes the script executable.
+- **Application Setup**: Copies the application files and setup script into the container and makes the script executable. Starts db & apex install. 
 
 ### docker-compose.yml
 
-- **Database Service (esd-database)**: Sets up an Oracle XE container using the `gvenzl/oracle-xe` image. The Oracle password is taken from an environment variable. Persistent storage for the database is configured with a volume.
+- **Database Service (free-database)**: Sets up an Oracle Free(or XE) container using the `gvenzl/oracle-free` (or xe) image. The Oracle password is taken from an environment variable. Persistent storage for the database is configured with a volume. 
 
-- **Mission App Service (mission-app)**: This service depends on the database service being healthy. It uses the Oracle ORDS image from Oracle's container registry. Configurations and secrets for ORDS are mounted as volumes.
+- **ORDS/Apex Service (ords-apex)**: This service depends on the database service being healthy. It uses the Oracle ORDS image from Oracle's container registry. Configurations and secrets for ORDS are mounted as volumes.
 
 - **Network**: All services run in the `esd-database-network` network.
 
 ## Prerequisites
 
-- Set the following environment secret variables via the GitHub Secrets in the user section for Codespace:
+- Set the following repo secret variables via the GitHub Secrets in the user section for Codespace:
   - `ORACLE_PASSWORD`: Password for Oracle XE.
   - `DOCKER_REGISTRY_USERNAME`: Username for the Oracle container registry.
   - `DOCKER_REGISTRY_PASSWORD`: Password for the Oracle container registry.
@@ -48,18 +50,20 @@ This Codespace sets up a Docker-based Oracle XE and ORDS/Apex application. The c
 
 ## Important Notes
 
-1. The system will open up to VS code as its installing.
-2. view the progress with these commands
+1. The system will open up to VS code editor as its installing in the background.
+2. To view the progress of the install, use these commands
 - Useful terminal commands
 ```
+#view containers
 docker ps
+#view container logs
 docker logs mission-app
 ```
-- !!! If there are any persistent data changes, you might want to back up the `db-vol` directory, which contains the database data.
-- !!! Remember to ensure  secrets are appropriately set and secured within GitHub, as they contain sensitive data.
+3. !!! If there are any persistent data changes, you might want to back up the `db-vol` directory, which contains the database data.
+4. !!! Remember to ensure  secrets are appropriately set and secured within GitHub, as they contain sensitive data.
 
 ## Access Apex
-When you forward a port, your application becomes available at the URL 
+After install,  your application becomes available at the URL based on port forwared in code(8181).  
 - https://CODESPACENAME-PORT.app.github.dev
 
 For example:
@@ -67,7 +71,7 @@ For example:
 
 ## Feedback & Contributions
 
-Feedback & contributions are always welcome
+New to codespaces, so feedback & contributions are welcome.
 
 
 

@@ -1,8 +1,9 @@
-version: '3'
 services:
-  esd-database:
-    container_name: esd-database
-    image: gvenzl/oracle-xe
+  free-database:
+    container_name: free-database
+    #image: gvenzl/oracle-xe
+    #image: or/build-your-own
+    image: gvenzl/oracle-free
     ports: 
       - 1521:1521
     environment:
@@ -15,11 +16,11 @@ services:
       interval: 30s
       timeout: 10s
       retries: 100
-  mission-app:
-    container_name: mission-app
+  ords-apex:
+    container_name: ords-apex
     restart: always
     depends_on:
-      esd-database:
+      free-database:
         condition: service_healthy
     volumes:
       - ./ords_secrets:/opt/oracle/variables
@@ -28,10 +29,10 @@ services:
       - 8181:8181
     image: container-registry.oracle.com/database/ords:latest
     environment:
-      - DOCKER_REGISTRY_USERNAME=${DOCKER_REGISTRY_USERNAME}
-      - DOCKER_REGISTRY_PASSWORD=${DOCKER_REGISTRY_PASSWORD}
+      - ORACLE_DOCKER_REGISTRY_USERNAME=${ORACLE_DOCKER_REGISTRY_USERNAME}
+      - ORACLE_DOCKER_REGISTRY_PASSWORD=${ORACLE_DOCKER_REGISTRY_PASSWORD}
       - CONN_STRING=${CONN_STRING}
 networks:
   default:
-    name: esd-database-network
+    name: database-network
 

@@ -22,4 +22,4 @@ sleep 7
 docker-compose up
 
 # Stop all running containers after setup (can be removed if you want the services to keep running)
-docker-compose stop
+#docker-compose stop
