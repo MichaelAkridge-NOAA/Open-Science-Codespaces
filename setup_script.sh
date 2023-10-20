@@ -7,7 +7,7 @@ mkdir -p /app/db-vol
 chmod -R 777 /app/db-vol
 chmod -R 777 /app/ords_config
 chmod -R 777 /app/ords_secrets
-echo 'CONN_STRING=user/password@hostname:port/service_name' > /app/ords_secrets/conn_string.txt
+echo $CONN_STRING > /app/ords_secrets/conn_string.txt
 
 # Navigate to the app directory
 cd /app
