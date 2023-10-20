@@ -1,8 +1,6 @@
 services:
   free-database:
     container_name: free-database
-    #image: gvenzl/oracle-xe
-    #image: or/build-your-own
     image: gvenzl/oracle-free
     ports: 
       - 1521:1521
