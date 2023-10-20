@@ -18,6 +18,10 @@ dockerd &
 # Wait for the Docker daemon to initialize
 sleep 7
 
+docker-compose start
+# Log in to Oracle Docker Registry
+echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin
+
 # Bring up your services using docker-compose
 docker-compose up
 
