@@ -10,6 +10,14 @@ This Codespace sets up a Docker-based Oracle Free(or XE, etc) and ORDS/Apex appl
 3. Select 'New Codespace' and repository cloned in step 1.
 4. The codespace will initialize itself by building the container based on the provided Dockerfile and start the services based on the `docker-compose.yml` file.
 
+## Prerequisites
+
+- Set the following repo secret variables via the GitHub Secrets in the user section for Codespace:
+  - `ORACLE_PASSWORD`: Password for Oracle XE.
+  - `ORACLE_DOCKER_REGISTRY_USERNAME`: Username for the Oracle container registry.
+  - `ORACLE_DOCKER_REGISTRY_PASSWORD`: Password for the Oracle container registry.
+  - `CONN_STRING`: Connection string for the Apex application.
+
 ## Configuration Breakdown
 
 ### devcontainer.json
@@ -33,20 +41,12 @@ This Codespace sets up a Docker-based Oracle Free(or XE, etc) and ORDS/Apex appl
 - **Application Setup**: Copies the application files and setup script into the container and makes the script executable. Starts db & apex install. 
 
 ### docker-compose.yml
+![](./docs/2022_docker_stack.png)
+- **Database Service (free-database)**: Sets up an Oracle Free(or XE) container using the `https://hub.docker.com/r/gvenzl/oracle-free` (or xe) image. The Oracle password is taken from an environment variable. Persistent storage for the database is configured with a volume. 
 
-- **Database Service (free-database)**: Sets up an Oracle Free(or XE) container using the `gvenzl/oracle-free` (or xe) image. The Oracle password is taken from an environment variable. Persistent storage for the database is configured with a volume. 
+- **ORDS/Apex Service (ords-apex)**: This service depends on the database service being healthy. It uses the Oracle ORDS image from Oracle's container registry(container-registry.oracle.com). Configurations and secrets for ORDS are mounted as volumes.
 
-- **ORDS/Apex Service (ords-apex)**: This service depends on the database service being healthy. It uses the Oracle ORDS image from Oracle's container registry. Configurations and secrets for ORDS are mounted as volumes.
-
-- **Network**: All services run in the `esd-database-network` network.
-
-## Prerequisites
-
-- Set the following repo secret variables via the GitHub Secrets in the user section for Codespace:
-  - `ORACLE_PASSWORD`: Password for Oracle XE.
-  - `DOCKER_REGISTRY_USERNAME`: Username for the Oracle container registry.
-  - `DOCKER_REGISTRY_PASSWORD`: Password for the Oracle container registry.
-  - `CONN_STRING`: Connection string for the Apex application.
+- **Network**: All services run in the `database-network` network.
 
 ## Important Notes
 
