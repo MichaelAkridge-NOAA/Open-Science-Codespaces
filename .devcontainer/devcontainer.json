@@ -6,7 +6,7 @@
     "portsAttributes": {"1521": {"label": "oracle-free"},"8181": {"label": "ords-apex"}},
     "postCreateCommand": "/app/setup_script.sh",
     "runArgs": ["--volume=/var/lib/docker", "--privileged"],
-    "settings": {"terminal.integrated.shell.linux": "/bin/sh"},
+    "settings": {"terminal.integrated.shell.linux": "/bin/bash"},
     "remoteEnv": {
         "ORACLE_PASSWORD": "${localEnv:ORACLE_PASSWORD}",
         "ORACLE_DOCKER_REGISTRY_USERNAME": "${localEnv:ORACLE_DOCKER_REGISTRY_USERNAME}",
