@@ -7,11 +7,13 @@ RUN apk add --no-cache docker-engine
 RUN apk add --no-cache docker-cli
 RUN apk add --no-cache docker-compose
 RUN apk add --no-cache unzip
+RUN apk add --no-cache wget
 
 # Add your application files/folders
 ADD ./app/XE /app
 
-RUN unzip /app/db-vol.zip -d /app/ && rm /app/db-vol.zip
+#RUN wget -O /app/db-vol.zip http://example.com/path/to/db-vol.zip
+#RUN unzip /app/db-vol.zip -d /app/ && rm /app/db-vol.zip
 
 # Make the script executable
 RUN chmod +x /app/setup_script.sh

@@ -17,6 +17,7 @@ cat <<EOL >> "$LOGFILE"
 ======================================================================
 EOL
 # Set up ORDS secrets
+mkdir -p /app/db-vol
 mkdir -p /app/ords_secrets
 mkdir -p /app/ords_config
 chmod -R 777 /app/db-vol
