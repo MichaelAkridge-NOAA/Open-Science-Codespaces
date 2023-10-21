@@ -37,7 +37,7 @@
     },
     "customizations": {
         "codespaces": {
-            "openFiles": ["/app/README.md"]
+            "openFiles": ["README.md","docker_log.txt"]
         }
     }
 }
