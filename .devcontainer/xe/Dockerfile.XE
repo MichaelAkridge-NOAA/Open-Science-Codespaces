@@ -10,7 +10,7 @@ RUN apk add --no-cache unzip
 RUN apk add --no-cache wget
 
 # Add your application files/folders
-ADD ./app/XE /app
+ADD .../app/XE /app
 
 #RUN wget -O /app/db-vol.zip http://example.com/path/to/db-vol.zip
 #RUN unzip /app/db-vol.zip -d /app/ && rm /app/db-vol.zip
