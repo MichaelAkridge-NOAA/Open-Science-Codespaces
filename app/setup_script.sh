@@ -1,18 +1,14 @@
 #!/bin/bash
 
 LOGFILE="/app/docker_log.txt"
-HTML_LOGFILE="/app/docker_log.html"
 
 log() {
     echo "$1" | tee -a "$LOGFILE"
-    echo "$1<br>" | tee -a "$HTML_LOGFILE"  # Append logs in HTML format
 }
-
 
 # Create the log file and set permissions
 touch "$LOGFILE"
 chmod 777 "$LOGFILE"
-
 
 # Set up ORDS secrets
 mkdir -p /app/ords_secrets
