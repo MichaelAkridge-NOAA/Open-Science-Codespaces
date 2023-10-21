@@ -12,9 +12,8 @@ touch "$LOGFILE"
 chmod 777 "$LOGFILE"
 
 # open log
-sleep 10
-code "$LOGFILE" &
-
+code -w "$LOGFILE" &
+sleep 2
 # Set up ORDS secrets
 mkdir -p /app/ords_secrets
 mkdir -p /app/ords_config
