@@ -12,9 +12,9 @@ ADD ./app /app
 mkdir -p /app/ords_secrets
 mkdir -p /app/ords_config
 mkdir -p /app/db-vol
-chmod -R 777 /app/db-vol
-chmod -R 777 /app/ords_config
-chmod -R 777 /app/ords_secrets
+RUN chmod -R 777 /app/db-vol
+RUN chmod -R 777 /app/ords_config
+RUN chmod -R 777 /app/ords_secrets
 
 # Make the script executable
 RUN chmod +x /app/setup_script.sh
