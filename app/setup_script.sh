@@ -9,7 +9,13 @@ log() {
 # Create the log file and set permissions
 touch "$LOGFILE"
 chmod 777 "$LOGFILE"
-
+# Initial logs or information
+cat <<EOL >> "$LOGFILE"
+======================================================================
+                             Setup Initiated
+- Starting docker-compose services.
+======================================================================
+EOL
 # Set up ORDS secrets
 mkdir -p /app/ords_secrets
 mkdir -p /app/ords_config
@@ -31,7 +37,19 @@ sleep 7
 
 # Bring up your services using docker-compose and log output
 docker-compose up &>> "$LOGFILE"
-
+cat <<EOL >> "$LOGFILE"
+======================================================================
+                          Docker Compose Finished
+- Moving on to the next commands or steps.
+======================================================================
+EOL
 # Stop all running containers after setup (can be removed if you want the services to keep running)
 #docker-compose stop &>> "$LOGFILE"
+
+cat <<EOL >> "$LOGFILE"
+======================================================================
+                             Setup Completed
+- All tasks finished successfully.
+======================================================================
+EOL
 
