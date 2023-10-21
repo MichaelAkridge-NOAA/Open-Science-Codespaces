@@ -5,7 +5,7 @@
     },
     "workspaceFolder": "/app",
     "forwardPorts": [1521, 8181, 8000],
-    "portsAttributes": {"1521": {"label": "oracle-free"},"8181": {"label": "ords-apex"}},
+    "portsAttributes": {"1521": {"label": "oracle-free"},"8181": {"label": "ords-apex","onAutoForward": "openPreview"}},
     "postCreateCommand": [
         "/app/setup_script.sh",
         "echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin","python3 /app/serve_logs.py &","code /app/docker_log.html"
@@ -19,6 +19,8 @@
         "ORACLE_DOCKER_REGISTRY_USERNAME": "${localEnv:ORACLE_DOCKER_REGISTRY_USERNAME}",
         "ORACLE_DOCKER_REGISTRY_PASSWORD": "${localEnv:ORACLE_DOCKER_REGISTRY_PASSWORD}",
         "CONN_STRING": "${localEnv:CONN_STRING}"
-    }
+    },
+   "customizations": {"codespaces": {"openFiles": ["app/docker_log.html"]}
 }
+
 
