@@ -10,12 +10,10 @@ log() {
 # Create the log file and set permissions
 touch "$LOGFILE"
 chmod 777 "$LOGFILE"
-# Try to open the log in gedit in the background, if available
-if [ -n "$DISPLAY" ]; then
-    gedit "$LOGFILE" &
-else
-    echo "Graphical environment not detected. Skipping log file display."
-fi
+
+# open log
+sleep 10
+code "$LOGFILE" &
 
 # Set up ORDS secrets
 mkdir -p /app/ords_secrets
