@@ -33,4 +33,3 @@ services:
 networks:
   default:
     name: database-network
-
