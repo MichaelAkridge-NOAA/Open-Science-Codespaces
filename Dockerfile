@@ -9,12 +9,6 @@ RUN apk add --no-cache docker-compose
 
 # Add your application files/folders
 ADD ./app /app
-mkdir -p /app/ords_secrets
-mkdir -p /app/ords_config
-mkdir -p /app/db-vol
-RUN chmod -R 777 /app/db-vol
-RUN chmod -R 777 /app/ords_config
-RUN chmod -R 777 /app/ords_secrets
 
 # Make the script executable
 RUN chmod +x /app/setup_script.sh

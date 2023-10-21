@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Set up ORDS secrets
+mkdir -p /app/ords_secrets
+mkdir -p /app/ords_config
+mkdir -p /app/db-vol
+chmod -R 777 /app/db-vol
+chmod -R 777 /app/ords_config
+chmod -R 777 /app/ords_secrets
 echo $CONN_STRING > /app/ords_secrets/conn_string.txt
 
 # Navigate to the app directory
