@@ -41,4 +41,47 @@
         }
     }
 }
+{
+    "name": "Oracle-XE-Apex Space",
+    "build": {
+        "dockerfile": "../Dockerfile.XE"
+    },
+    "workspaceFolder": "/app",
+    "forwardPorts": [
+        1521,
+        8181,
+        8000
+    ],
+    "portsAttributes": {
+        "1521": {
+            "label": "oracle-free"
+        },
+        "8181": {
+            "label": "ords-apex",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "postCreateCommand": [
+        "/app/xe/setup_script.sh",
+        "echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin"
+    ],
+    "runArgs": [
+        "--volume=/var/lib/docker",
+        "--privileged"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/sh"
+    },
+    "remoteEnv": {
+        "ORACLE_PASSWORD": "${localEnv:ORACLE_PASSWORD}",
+        "ORACLE_DOCKER_REGISTRY_USERNAME": "${localEnv:ORACLE_DOCKER_REGISTRY_USERNAME}",
+        "ORACLE_DOCKER_REGISTRY_PASSWORD": "${localEnv:ORACLE_DOCKER_REGISTRY_PASSWORD}",
+        "XE_CONN_STRING": "${localEnv:XE_CONN_STRING}"
+    },
+    "customizations": {
+        "codespaces": {
+            "openFiles": ["README.md","docker_log.txt"]
+        }
+    }
+}
 

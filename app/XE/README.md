@@ -10,8 +10,7 @@
 #view containers
 docker ps
 #view container logs
-docker logs ords-apex
-
+docker logs mission-app
 ```
 3. !!! If there are any persistent data changes, you might want to back up the `db-vol` directory, which contains the database data.
 
