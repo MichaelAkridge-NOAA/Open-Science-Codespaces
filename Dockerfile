@@ -13,5 +13,5 @@ ADD ./app /app
 # Make the script executable
 RUN chmod +x /app/setup_script.sh
 
-EXPOSE 1521 8181
+EXPOSE 1521 8181 8000
 

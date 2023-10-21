@@ -4,11 +4,11 @@
         "dockerfile": "../Dockerfile"
     },
     "workspaceFolder": "/app",
-    "forwardPorts": [1521, 8181],
+    "forwardPorts": [1521, 8181, 8000],
     "portsAttributes": {"1521": {"label": "oracle-free"},"8181": {"label": "ords-apex"}},
     "postCreateCommand": [
         "/app/setup_script.sh",
-        "echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin"
+        "echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin","python3 /path_to_serve_logs/serve_logs.py &","code /app/docker_log.html"
     ],
     "runArgs": ["--volume=/var/lib/docker", "--privileged"],
     "settings": {

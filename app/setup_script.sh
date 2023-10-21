@@ -1,19 +1,19 @@
 #!/bin/bash
 
 LOGFILE="/app/docker_log.txt"
+HTML_LOGFILE="/app/docker_log.html"
 
-# Create a function to log both to console and to a file
 log() {
     echo "$1" | tee -a "$LOGFILE"
+    echo "$1<br>" | tee -a "$HTML_LOGFILE"  # Append logs in HTML format
 }
+
 
 # Create the log file and set permissions
 touch "$LOGFILE"
 chmod 777 "$LOGFILE"
 
-# open log
-code -w "$LOGFILE" &
-sleep 2
+
 # Set up ORDS secrets
 mkdir -p /app/ords_secrets
 mkdir -p /app/ords_config
