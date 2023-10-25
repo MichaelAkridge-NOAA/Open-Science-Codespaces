@@ -1,6 +1,6 @@
 # Oracle Free Database & ORDS-Apex using Github Codespace Setup
 
-This Codespace sets up a Docker-based Oracle Free(or XE, etc) and ORDS/Apex application for development and testing. Configs are defined in the `devcontainer.json` file & associated Docker and Docker Compose files. Workflow can be applied to other docker apps.
+This repo will setup a temporary development Codespace that deploys an Oracle Free(or XE, etc) database and ORDS/Apex application for development and testing. Configs are defined in the `devcontainer.json` file & associated Docker and Docker Compose files. Workflow can be applied to other docker deployed apps and additional data can be added and/or installed.
 
 ## Quick Start
 1. Review Prerequisites, and ensure that all have been satisfied before proceeding.
@@ -76,11 +76,14 @@ CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
 #view containers
 docker ps
 #view container logs
-docker logs mission-app
+docker logs free-database
+docker logs ords-apex
 ```
+![](./docs/11c.png)
+![](./docs/11a.png)
+![](./docs/11b.png)
 ![](./docs/11.png)
 ![](./docs/12.png)
-
 ## Access Database & Apex
 After install,  your application becomes available at the URL based on port forwared in code(8181).  
 - https://CODESPACENAME-PORT.app.github.dev
