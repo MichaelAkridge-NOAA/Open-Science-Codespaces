@@ -1,9 +1,5 @@
 # Oracle Free Database & ORDS-Apex using Github Codespace Setup
-[![Open Oracle Free in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Ffree%2Fdevcontainer.json)
-
-[![Open Oracle XE in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Fxe%2Fdevcontainer.json)
-
-[![Open RStudio in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)
+[![Open Oracle Free in GitHub Codespaces](./docs/badge_free.png)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Ffree%2Fdevcontainer.json)[![Open Oracle XE in GitHub Codespaces](./docs/badge_xe.png)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Fxe%2Fdevcontainer.json)[![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)
 
 This repo will setup a temporary development Codespace that deploys an Oracle Free(or XE, etc) database and ORDS/Apex application for development and testing. Configs are defined in the `devcontainer.json` file & associated Docker and Docker Compose files. Workflow can be applied to other docker deployed apps and additional data can be added and/or installed.
 # Table of Contents
