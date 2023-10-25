@@ -1,7 +1,7 @@
 {
     "name": "RStudio Codespace",
     "build": {
-        "dockerfile": "../../Dockerfile.FREE"
+        "dockerfile": "../../Dockerfile.RSTUDIO"
     },
     "workspaceFolder": "/app",
     "forwardPorts": [8787],
