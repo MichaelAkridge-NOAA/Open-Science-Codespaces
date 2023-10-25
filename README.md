@@ -19,9 +19,14 @@ This Codespace sets up a Docker-based Oracle Free(or XE, etc) and ORDS/Apex appl
   - `ORACLE_DOCKER_REGISTRY_PASSWORD`: Password for the Oracle container registry.
   - `ORACLE_PASSWORD`: Set Sys Password for the Oracle Free(or XE)
   - `CONN_STRING`: If using Oracle Free, set connection string for ORDS/Apex. (XEPDB1 for XE and FREEPDB1 for free)
-  	- CONN_STRING=sys/<insert-passwrod-here>@database:1521/FREEPDB1
-  - 'XE_CONN_STRING': If using Oracle XE, set connection string for ORDS/Apex as follows
-	- CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
+  - `XE_CONN_STRING`: If using Oracle XE, set connection string for ORDS/Apex
+```
+# Example for Oracle Free
+CONN_STRING=sys/<insert-passwrod-here>@database:1521/FREEPDB1
+
+# Example for Oracle XE
+CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
+```
 ## Configuration Breakdown
 
 ### devcontainer.json
