@@ -1,15 +1,15 @@
 services:
   rstudio:
-    container_name: rtudio
+    container_name: rstudio
     image: rocker/rstudio:latest
     ports:
       - "8787:8787"
-    environment:
-      DISABLE_AUTH: true
-      PASSWORD: ${RSTUDIO_PASSWORD}
     volumes:
       - ./.rstudio_config:/home/rstudio/.config/rstudio
       - ./workspace:/home/rstudio/workspace
       - ./other_dir:/other_dir
     environment:
       - RSTUDIO_PASSWORD=${RSTUDIO_PASSWORD}
+      - DISABLE_AUTH: true
+      - PASSWORD: ${RSTUDIO_PASSWORD}
+
