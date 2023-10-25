@@ -1,7 +1,17 @@
 # Oracle Free Database & ORDS-Apex using Github Codespace Setup
 
 This repo will setup a temporary development Codespace that deploys an Oracle Free(or XE, etc) database and ORDS/Apex application for development and testing. Configs are defined in the `devcontainer.json` file & associated Docker and Docker Compose files. Workflow can be applied to other docker deployed apps and additional data can be added and/or installed.
-
+# Table of Contents
+1. **[Quick Start](#quick-start)**
+2. **[Prerequisites](#prerequisites)**
+3. **[Config Breakdown](#configuration-breakdown)**
+4. **[Deploy Codespace](#deploy-codespace)**
+5. **[Startup](#startup)**
+6. **[Access Database & Apex](#access-database--apex)**
+7. **[Start/Stop Codespace](#configuration-breakdown)**
+8. **[Disclaimer](#disclaimer)**
+9. **[License](#license)**
+***
 ## Quick Start
 1. Review Prerequisites, and ensure that all have been satisfied before proceeding.
 2. Clone the repository.
@@ -60,17 +70,20 @@ CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
 - **ORDS/Apex Service (ords-apex)**: This service depends on the database service being healthy. It uses the Oracle ORDS image from Oracle's container registry(container-registry.oracle.com). Configurations and secrets for ORDS are mounted as volumes.
 
 - **Network**: All services run in the `database-network` network.
-## Deploy
+## Deploy Codespace
 ![](./docs/04.png)
-![](./docs/05.png)
 ![](./docs/06.png)
 ![](./docs/07.png)
-![](./docs/08.png)
 ![](./docs/09.png)
 ![](./docs/10.png)
 ## Startup
 1. The system will open up to VS code editor as its installing via docker in the background.
+
+![](./docs/11.png)
+
 2. To view the progress of the install, use these commands or checkout the log file
+![](./docs/11b.png)
+![](./docs/12.png)
 - Useful terminal commands
 ```
 #view containers
@@ -81,11 +94,6 @@ docker logs ords-apex
 ```
 ![](./docs/11d.png)
 
-![](./docs/11c.png)
-![](./docs/11a.png)
-![](./docs/11b.png)
-![](./docs/11.png)
-![](./docs/12.png)
 ## Access Database & Apex
 After install,  your application becomes available at the URL based on port forwared in code(8181).  
 - https://CODESPACENAME-PORT.app.github.dev
@@ -98,10 +106,14 @@ For example:
 ## Start/Stop Codespace
 ![](./docs/15.png)
 - You can stop, start, and delete the codespace at anytime on the codespace page: https://github.com/codespaces/
-- !!! If there are any persistent data changes, you might want to back up the `db-vol` directory, which contains the database data.
-## Feedback & Contributions
+- !!! Note this is a temp dev space. No changes are saved. If there are any persistent data changes you need, you might want to back up the `db-vol` directory, which contains the database data & perform other due diligence.
 
+----------
+#### Disclaimer
+This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project content is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
+
+##### License
+See the [LICENSE.md](./LICENSE.md) for details
+
+#### Feedback & Contributions
 New to codespaces, so feedback & contributions are welcome.
-
-
-
