@@ -1,0 +1,32 @@
+{
+    "name": "Oracle-Free-Apex Space",
+    "build": {
+        "dockerfile": "../../Dockerfile.FREE"
+    },
+    "workspaceFolder": "/app",
+    "forwardPorts": [8787],
+    "portsAttributes": {
+        "8787": {
+            "label": "rstudio"
+        }
+    },
+    "postCreateCommand": [
+        "/app/setup_script.sh",
+    ],
+    "runArgs": [
+        "--volume=/var/lib/docker",
+        "--privileged"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/sh"
+    },
+    "remoteEnv": {
+        "RSTUDIO_PASSWORD": "${localEnv:RSTUDIO_PASSWORD}"
+    },
+    "customizations": {
+        "codespaces": {
+            "openFiles": ["README.md", "docker_log.txt"]
+        }
+    }
+}
+
