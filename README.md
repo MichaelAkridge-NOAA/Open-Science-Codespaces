@@ -79,6 +79,8 @@ docker ps
 docker logs free-database
 docker logs ords-apex
 ```
+![](./docs/11d.png)
+
 ![](./docs/11c.png)
 ![](./docs/11a.png)
 ![](./docs/11b.png)
