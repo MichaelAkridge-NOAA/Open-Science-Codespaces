@@ -1,5 +1,5 @@
 {
-    "name": "Oracle-Free-Apex Space",
+    "name": "RStudio Codespace",
     "build": {
         "dockerfile": "../../Dockerfile.FREE"
     },
