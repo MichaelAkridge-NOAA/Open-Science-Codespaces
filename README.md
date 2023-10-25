@@ -1,20 +1,20 @@
 # Oracle Free Database & ORDS-Apex using Github Codespace Setup
 
-This Codespace sets up a Docker-based Oracle Free(or XE, etc) and ORDS/Apex application. Configs are defined in the `devcontainer.json` file & associated Docker and Docker Compose files.
+This Codespace sets up a Docker-based Oracle Free(or XE, etc) and ORDS/Apex application for development and testing. Configs are defined in the `devcontainer.json` file & associated Docker and Docker Compose files. Workflow can be applied to other docker apps.
 
 ## Quick Start
-
-1. Clone the repository.
-2. Navigate to Github codespace.
+1. Review Prerequisites, and ensure that all have been satisfied before proceeding.
+2. Clone the repository.
+3. Navigate to Github codespace.
 	- https://github.com/codespaces
-3. Select 'New Codespace' and repository cloned in step 1.
-4. The codespace will initialize itself by building the container based on the provided Dockerfile and start the services based on the `docker-compose.yml` file.
+4. Select 'New Codespace' and repository cloned in step 1.
+5. The codespace will initialize itself by building the container based on the provided Dockerfile and start the services based on the `docker-compose.yml` file.
 
 ## Prerequisites
-- <mark>Create an Oracle account for access to the Oracle Image Registry</mark>
-  - [Oracle Image/Container Registry](https://container-registry.oracle.com/ords/f?p=113:10)
+1. <mark>Create an Oracle account for access to the Oracle Image Registry (needed for access to Oracle Docker Images)</mark>
+	- [Oracle Image/Container Registry](https://container-registry.oracle.com/ords/f?p=113:10)
 
-- Set the following repo secret variables via the GitHub Secrets in the user section for Codespace:
+2. Set the following secret variables via GitHub Secrets([learn more](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)) in the user section for Codespace. Secrets are encrypted environment variables that you create in a repository or organization to store sensitive information.
   - `ORACLE_DOCKER_REGISTRY_USERNAME`: Username for the Oracle container registry.
   - `ORACLE_DOCKER_REGISTRY_PASSWORD`: Password for the Oracle container registry.
   - `ORACLE_PASSWORD`: Set Sys Password for the Oracle Free(or XE)
@@ -27,6 +27,10 @@ CONN_STRING=sys/<insert-passwrod-here>@database:1521/FREEPDB1
 # Example for Oracle XE
 CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
 ```
+![](./docs/01.png)
+![](./docs/02.png)
+![](./docs/03.png)
+
 ## Configuration Breakdown
 
 ### devcontainer.json
@@ -56,11 +60,17 @@ CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
 - **ORDS/Apex Service (ords-apex)**: This service depends on the database service being healthy. It uses the Oracle ORDS image from Oracle's container registry(container-registry.oracle.com). Configurations and secrets for ORDS are mounted as volumes.
 
 - **Network**: All services run in the `database-network` network.
-
-## Important Notes
-
-1. The system will open up to VS code editor as its installing in the background.
-2. To view the progress of the install, use these commands
+## Deploy
+![](./docs/04.png)
+![](./docs/05.png)
+![](./docs/06.png)
+![](./docs/07.png)
+![](./docs/08.png)
+![](./docs/09.png)
+![](./docs/10.png)
+## Startup
+1. The system will open up to VS code editor as its installing via docker in the background.
+2. To view the progress of the install, use these commands or checkout the log file
 - Useful terminal commands
 ```
 #view containers
@@ -68,16 +78,22 @@ docker ps
 #view container logs
 docker logs mission-app
 ```
-3. !!! If there are any persistent data changes, you might want to back up the `db-vol` directory, which contains the database data.
-4. !!! Remember to ensure  secrets are appropriately set and secured within GitHub, as they contain sensitive data.
+![](./docs/11.png)
+![](./docs/12.png)
 
 ## Access Database & Apex
 After install,  your application becomes available at the URL based on port forwared in code(8181).  
 - https://CODESPACENAME-PORT.app.github.dev
-
 For example:
 - https://probable-halibut-p97rvgw99p93rx99-8181.app.github.dev
 
+![](./docs/13.png)
+![](./docs/14.png)
+
+## Start/Stop Codespace
+![](./docs/15.png)
+- You can stop, start, and delete the codespace at anytime on the codespace page: https://github.com/codespaces/
+- !!! If there are any persistent data changes, you might want to back up the `db-vol` directory, which contains the database data.
 ## Feedback & Contributions
 
 New to codespaces, so feedback & contributions are welcome.
