@@ -1,7 +1,17 @@
 # Oracle Free Database & ORDS-Apex using Github Codespace Setup
 
 This repo will setup a temporary development Codespace that deploys an Oracle Free(or XE, etc) database and ORDS/Apex application for development and testing. Configs are defined in the `devcontainer.json` file & associated Docker and Docker Compose files. Workflow can be applied to other docker deployed apps and additional data can be added and/or installed.
-
+# Table of Contents
+1. **[Quick Start](#quick-start)**
+2. **[Prerequisites](#prerequisites)**
+3. **[Config Breakdown](#configuration-breakdown)**
+4. **[Deploy Codespace](#deploy-codespace)**
+5. **[Startup](#startup)**
+6. **[Access Database & Apex](#access-database--apex)**
+7. **[Start/Stop Codespace](#configuration-breakdown)**
+8. **[Disclaimer](#disclaimer)**
+9. **[License](#license)**
+***
 ## Quick Start
 1. Review Prerequisites, and ensure that all have been satisfied before proceeding.
 2. Clone the repository.
@@ -97,5 +107,13 @@ For example:
 ![](./docs/15.png)
 - You can stop, start, and delete the codespace at anytime on the codespace page: https://github.com/codespaces/
 - !!! Note this is a temp dev space. No changes are saved. If there are any persistent data changes you need, you might want to back up the `db-vol` directory, which contains the database data & perform other due diligence.
-## Feedback & Contributions
+
+----------
+#### Disclaimer
+This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project content is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
+
+##### License
+See the [LICENSE.md](./LICENSE.md) for details
+
+#### Feedback & Contributions
 New to codespaces, so feedback & contributions are welcome.
