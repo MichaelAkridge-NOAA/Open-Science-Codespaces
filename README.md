@@ -60,12 +60,10 @@ CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
 - **ORDS/Apex Service (ords-apex)**: This service depends on the database service being healthy. It uses the Oracle ORDS image from Oracle's container registry(container-registry.oracle.com). Configurations and secrets for ORDS are mounted as volumes.
 
 - **Network**: All services run in the `database-network` network.
-## Deploy
+## Deploy Codespace
 ![](./docs/04.png)
-![](./docs/05.png)
 ![](./docs/06.png)
 ![](./docs/07.png)
-![](./docs/08.png)
 ![](./docs/09.png)
 ![](./docs/10.png)
 ## Startup
@@ -98,10 +96,6 @@ For example:
 ## Start/Stop Codespace
 ![](./docs/15.png)
 - You can stop, start, and delete the codespace at anytime on the codespace page: https://github.com/codespaces/
-- !!! If there are any persistent data changes, you might want to back up the `db-vol` directory, which contains the database data.
+- !!! Note this is a temp dev space. No changes are saved. If there are any persistent data changes you need, you might want to back up the `db-vol` directory, which contains the database data & perform other due diligence.
 ## Feedback & Contributions
-
 New to codespaces, so feedback & contributions are welcome.
-
-
-
