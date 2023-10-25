@@ -70,7 +70,12 @@ CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
 ![](./docs/10.png)
 ## Startup
 1. The system will open up to VS code editor as its installing via docker in the background.
+
+![](./docs/11.png)
+
 2. To view the progress of the install, use these commands or checkout the log file
+![](./docs/11b.png)
+![](./docs/12.png)
 - Useful terminal commands
 ```
 #view containers
@@ -81,11 +86,6 @@ docker logs ords-apex
 ```
 ![](./docs/11d.png)
 
-![](./docs/11c.png)
-![](./docs/11a.png)
-![](./docs/11b.png)
-![](./docs/11.png)
-![](./docs/12.png)
 ## Access Database & Apex
 After install,  your application becomes available at the URL based on port forwared in code(8181).  
 - https://CODESPACENAME-PORT.app.github.dev
