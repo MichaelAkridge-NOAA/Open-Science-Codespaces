@@ -11,13 +11,22 @@ This Codespace sets up a Docker-based Oracle Free(or XE, etc) and ORDS/Apex appl
 4. The codespace will initialize itself by building the container based on the provided Dockerfile and start the services based on the `docker-compose.yml` file.
 
 ## Prerequisites
+- <mark>Create an Oracle account for access to the Oracle Image Registry</mark>
+  - [Oracle Image/Container Registry](https://container-registry.oracle.com/ords/f?p=113:10)
 
 - Set the following repo secret variables via the GitHub Secrets in the user section for Codespace:
-  - `ORACLE_PASSWORD`: Password for Oracle XE.
   - `ORACLE_DOCKER_REGISTRY_USERNAME`: Username for the Oracle container registry.
   - `ORACLE_DOCKER_REGISTRY_PASSWORD`: Password for the Oracle container registry.
-  - `CONN_STRING`: Connection string for the Apex application. (XEPDB1 for XE and FREEPDB1 for free)
+  - `ORACLE_PASSWORD`: Set Sys Password for the Oracle Free(or XE)
+  - `CONN_STRING`: If using Oracle Free, set connection string for ORDS/Apex. (XEPDB1 for XE and FREEPDB1 for free)
+  - `XE_CONN_STRING`: If using Oracle XE, set connection string for ORDS/Apex
+```
+# Example for Oracle Free
+CONN_STRING=sys/<insert-passwrod-here>@database:1521/FREEPDB1
 
+# Example for Oracle XE
+CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
+```
 ## Configuration Breakdown
 
 ### devcontainer.json
