@@ -10,6 +10,6 @@ services:
       - ./other_dir:/other_dir
     environment:
       - RSTUDIO_PASSWORD=${RSTUDIO_PASSWORD}
-      - DISABLE_AUTH=rrue
+      - DISABLE_AUTH=true
       - PASSWORD= ${RSTUDIO_PASSWORD}
 
