@@ -1,0 +1,15 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Navigate your first Codespace",
+  "steps": [
+    {
+      "title": "Introduction",
+      "description": "Hey! 👋 You've opened your first GitHub Codespaces template 👇"
+    },
+    {
+      "title": "Completed",
+      "description": "Mission complete!"
+    }
+  ],
+  "isPrimary": true
+}
