@@ -1,0 +1,18 @@
+{
+  "name": "RStudio in Codespaces",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "rstudio",
+  "workspaceFolder": "/home/rstudio/workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": {
+      "label": "rstudio",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "extensions": []
+}
+
