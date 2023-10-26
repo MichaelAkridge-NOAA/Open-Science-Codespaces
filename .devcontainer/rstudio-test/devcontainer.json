@@ -2,7 +2,7 @@
   "name": "testRStudio in Codespaces",
   "dockerComposeFile": "./docker-compose.yml",
   "service": "rstudio",
-  "workspaceFolder": "/workspace",
+  "workspaceFolder": "/home/rstudio/workspace",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
@@ -13,7 +13,7 @@
       "onAutoForward": "openPreview"
     }
   },
-"postStartCommand": "chmod +x /workspace/post_start.sh && /workspace/post_start.sh",
+"postStartCommand": "chmod +x /home/rstudio/workspace/post_start.sh && home/rstudio/workspace/post_start.sh",
   "extensions": []
 }
 
