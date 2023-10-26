@@ -13,7 +13,7 @@
       "onAutoForward": "openPreview"
     }
   },
-"postStartCommand": "echo 'RStudio is starting. Try it at https://$CODESPACE_NAME-8787.app.github.dev'",
+"postStartCommand": "./post_start.sh",
   "extensions": []
 }
 
