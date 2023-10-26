@@ -1,5 +1,5 @@
 {
-  "name": "testRStudio in Codespaces",
+  "name": "test2RStudio in Codespaces",
   "dockerComposeFile": "../../app/rstudio-test/docker-compose.yml",
   "service": "rstudio",
   "workspaceFolder": "/app",
