@@ -1,12 +1,15 @@
-# Oracle Free Database & ORDS-Apex using Github Codespace Setup
-[![Open Oracle Free in GitHub Codespaces](./docs/badge_free.png)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Ffree%2Fdevcontainer.json)[![Open Oracle XE in GitHub Codespaces](./docs/badge_xe.png)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Fxe%2Fdevcontainer.json)[![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)
+# Open Science Codespaces
+Create & Access Complete Codespaces quickly and easily. This repo setups temporary development Codespaces.  
 
-This repo will setup a temporary development Codespace that deploys an Oracle Free(or XE, etc) database and ORDS/Apex application for development and testing. Configs are defined in the `devcontainer.json` file & associated Docker and Docker Compose files. Workflow can be applied to other docker deployed apps and additional data can be added and/or installed.
+### For RStudio, just click this button
+[![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)
+
+### For an Oracle Database Codespace, checkout the quickstart below
+The following details deploying an Oracle Free(or XE, etc) database and ORDS/Apex application for development and testing. Configs are defined in the `devcontainer.json` file & associated Docker and Docker Compose files. Workflow can be applied to other docker deployed apps and additional data can be added and/or installed.
 # Table of Contents
 1. **[Quick Start](#quick-start)**
 2. **[Prerequisites](#prerequisites)**
 3. **[Config Breakdown](#configuration-breakdown)**
-4. **[Deploy Codespace](#deploy-codespace)**
 5. **[Startup](#startup)**
 6. **[Access Database & Apex](#access-database--apex)**
 7. **[Start/Stop Codespace](#configuration-breakdown)**
@@ -14,12 +17,10 @@ This repo will setup a temporary development Codespace that deploys an Oracle Fr
 9. **[License](#license)**
 ***
 ## Quick Start
-1. Review Prerequisites, and ensure that all have been satisfied before proceeding.
-2. Clone the repository.
-3. Navigate to Github codespace.
-	- https://github.com/codespaces
-4. Select 'New Codespace' and repository cloned in step 1.
-5. The codespace will initialize itself by building the container based on the provided Dockerfile and start the services based on the `docker-compose.yml` file.
+1. Clone this repository.
+2. Review Prerequisites, and ensure that all have been satisfied before proceeding.
+4. Click Deploy 
+5. And done. The codespace will initialize itself by building the container based on the provided Dockerfile and start the services based on the `docker-compose.yml` file.
 
 ## Prerequisites
 1. <mark>Create an Oracle account for access to the Oracle Image Registry (needed for access to Oracle Docker Images)</mark>
@@ -42,41 +43,12 @@ CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
 ![](./docs/02.png)
 ![](./docs/03.png)
 
-## Configuration Breakdown
+# Deploy
+### Oracle Free(or XE) Database & ORDS-Apex App using Github Codespaces
+Once Prerequisites are met, you can deploy with a click of these buttons. 
 
-### devcontainer.json
+[![Open Oracle Free in GitHub Codespaces](./docs/badge_free.png)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Ffree%2Fdevcontainer.json)[![Open Oracle XE in GitHub Codespaces](./docs/badge_xe.png)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Fxe%2Fdevcontainer.json)
 
-- **Docker Build**: Utilizes the `Dockerfile` located one directory above.
-  
-- **Workspace**: Sets up `/app` as the default directory.
-  
-- **Ports**: A couple ports are forwarded for access outside the container, including Oracle's port (`1521`) and the ORDS/Apex port (`8181`).
-  
-- **Commands**: After the container is created, a setup script is executed (`/app/setup_script.sh`) and the Docker registry is logged into using the provided credentials. Install takes time(~20mins). 
-  
-- **Environment Variables**: Environmental variables for Oracle DB, and Oracle registry are taken from the local repo secrets environment.
-
-### Dockerfile
-
-- **Base Image**: Uses `alpine:3.15.4` as the base image.
-  
-- **Packages**: Installs essential tools including bash, git, Docker, and Docker Compose.
-  
-- **Application Setup**: Copies the application files and setup script into the container and makes the script executable. Starts db & apex install. 
-
-### docker-compose.yml
-![](./docs/2022_docker_stack.png)
-- **Database Service (free-database)**: Sets up an Oracle Free(or XE) container using the `https://hub.docker.com/r/gvenzl/oracle-free` (or xe) image. The Oracle password is taken from an environment variable. Persistent storage for the database is configured with a volume. 
-
-- **ORDS/Apex Service (ords-apex)**: This service depends on the database service being healthy. It uses the Oracle ORDS image from Oracle's container registry(container-registry.oracle.com). Configurations and secrets for ORDS are mounted as volumes.
-
-- **Network**: All services run in the `database-network` network.
-## Deploy Codespace
-![](./docs/04.png)
-![](./docs/06.png)
-![](./docs/07.png)
-![](./docs/09.png)
-![](./docs/10.png)
 ## Startup
 1. The system will open up to VS code editor as its installing via docker in the background.
 
@@ -108,7 +80,35 @@ For example:
 ![](./docs/15.png)
 - You can stop, start, and delete the codespace at anytime on the codespace page: https://github.com/codespaces/
 - !!! Note this is a temp dev space. No changes are saved. If there are any persistent data changes you need, you might want to back up the `db-vol` directory, which contains the database data & perform other due diligence.
+## Configuration Breakdown
 
+### devcontainer.json
+
+- **Docker Build**: Utilizes the `Dockerfile` located one directory above.
+  
+- **Workspace**: Sets up `/app` as the default directory.
+  
+- **Ports**: A couple ports are forwarded for access outside the container, including Oracle's port (`1521`) and the ORDS/Apex port (`8181`).
+  
+- **Commands**: After the container is created, a setup script is executed (`/app/setup_script.sh`) and the Docker registry is logged into using the provided credentials. Install takes time(~20mins). 
+  
+- **Environment Variables**: Environmental variables for Oracle DB, and Oracle registry are taken from the local repo secrets environment.
+
+### Dockerfile
+
+- **Base Image**: Uses `alpine:3.15.4` as the base image.
+  
+- **Packages**: Installs essential tools including bash, git, Docker, and Docker Compose.
+  
+- **Application Setup**: Copies the application files and setup script into the container and makes the script executable. Starts db & apex install. 
+
+### docker-compose.yml
+![](./docs/2022_docker_stack.png)
+- **Database Service (free-database)**: Sets up an Oracle Free(or XE) container using the `https://hub.docker.com/r/gvenzl/oracle-free` (or xe) image. The Oracle password is taken from an environment variable. Persistent storage for the database is configured with a volume. 
+
+- **ORDS/Apex Service (ords-apex)**: This service depends on the database service being healthy. It uses the Oracle ORDS image from Oracle's container registry(container-registry.oracle.com). Configurations and secrets for ORDS are mounted as volumes.
+
+- **Network**: All services run in the `database-network` network.
 ----------
 #### Disclaimer
 This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project content is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
