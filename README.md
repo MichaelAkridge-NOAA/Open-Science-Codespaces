@@ -2,7 +2,7 @@
 Create & Access Complete Codespaces quickly and easily. This repo setups temporary development Codespaces.  
 
 ### For RStudio, just click this button
-[![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)
+[![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)
 
 ### For an Oracle Database Codespace, checkout the quickstart below
 The following details deploying an Oracle Free(or XE, etc) database and ORDS/Apex application for development and testing. Configs are defined in the `devcontainer.json` file & associated Docker and Docker Compose files. Workflow can be applied to other docker deployed apps and additional data can be added and/or installed.
@@ -47,7 +47,7 @@ CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
 ### Oracle Free(or XE) Database & ORDS-Apex App using Github Codespaces
 Once Prerequisites are met, you can deploy with a click of these buttons. 
 
-[![Open Oracle Free in GitHub Codespaces](./docs/badge_free.png)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Ffree%2Fdevcontainer.json)[![Open Oracle XE in GitHub Codespaces](./docs/badge_xe.png)](https://codespaces.new/MichaelAkridge-NOAA/Oracle-Apex-Docker-Stack-Github-Codespace?devcontainer_path=.devcontainer%2Fxe%2Fdevcontainer.json)
+[![Open Oracle Free in GitHub Codespaces](./docs/badge_free.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Ffree%2Fdevcontainer.json)[![Open Oracle XE in GitHub Codespaces](./docs/badge_xe.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Fxe%2Fdevcontainer.json)
 
 ## Startup
 1. The system will open up to VS code editor as its installing via docker in the background.
