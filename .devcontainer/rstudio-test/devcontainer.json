@@ -13,7 +13,7 @@
       "onAutoForward": "openPreview"
     }
   },
-"postStartCommand": "./post_start.sh",
+"postStartCommand": "/home/rstudio/workspace/post_start.sh",
   "extensions": []
 }
 
