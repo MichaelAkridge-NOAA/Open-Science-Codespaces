@@ -30,6 +30,10 @@ sleep 7
 # Bring up your services using docker-compose and log output
 docker-compose up &>> "$LOGFILE"
 cat <<EOL >> "$LOGFILE"
+sleep 30
+
+# Open the browser
+open http://localhost:8787
 ======================================================================
                           Docker Compose Finished
 - Moving on to the next commands or steps.
