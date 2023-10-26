@@ -9,7 +9,5 @@ services:
       - ./workspace:/home/rstudio/workspace
       - ./other_dir:/other_dir
     environment:
-      - RSTUDIO_PASSWORD=${RSTUDIO_PASSWORD}
       - DISABLE_AUTH=true
-      - PASSWORD= ${RSTUDIO_PASSWORD}
 
