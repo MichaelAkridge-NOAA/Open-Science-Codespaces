@@ -17,16 +17,16 @@ cat <<EOL >> "$LOGFILE"
 ======================================================================
 EOL
 # Set up ORDS secrets
-mkdir -p /app/ords_secrets
-mkdir -p /app/ords_config
-mkdir -p /app/db-vol
-chmod -R 777 /app/db-vol
-chmod -R 777 /app/ords_config
-chmod -R 777 /app/ords_secrets
-echo $CONN_STRING > /app/ords_secrets/conn_string.txt
+mkdir -p /workspace/ords_secrets
+mkdir -p /workspace/ords_config
+mkdir -p /workspace/db-vol
+chmod -R 777 /workspace/db-vol
+chmod -R 777 /workspace/ords_config
+chmod -R 777 /workspace/ords_secrets
+echo $CONN_STRING > /workspace/ords_secrets/conn_string.txt
 
-# Navigate to the app directory
-cd /app
+# Navigate to the workspace directory
+cd /workspace
 
 # Start the Docker daemon and log output
 dockerd &>> "$LOGFILE" &
@@ -54,7 +54,7 @@ docker logs ords-apex
 echo "$message"
 
 # Append the message to README.md
-echo "$message" >> /app/README.md
+echo "$message" >> /workspace/README.md
 # Bring up your services using docker-compose and log output
 docker-compose up &>> "$LOGFILE"
 cat <<EOL >> "$LOGFILE"

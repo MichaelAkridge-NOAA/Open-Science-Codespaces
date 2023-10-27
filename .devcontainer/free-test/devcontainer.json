@@ -1,6 +1,6 @@
 {
     "name": "TEST Oracle-Free-Apex Space",
-    "workspaceFolder": "/app",
+    "workspaceFolder": "/workspace",
     "forwardPorts": [1521, 8181, 8000],
     "portsAttributes": {
         "1521": {
