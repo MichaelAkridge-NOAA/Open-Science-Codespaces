@@ -3,7 +3,7 @@
     "build": {
         "dockerfile": "./docker-compose.yml"
     },
-    "workspaceFolder": "/app",
+    "workspaceFolder": "/workspace",
     "forwardPorts": [1521, 8181],
     "portsAttributes": {
         "1521": {
