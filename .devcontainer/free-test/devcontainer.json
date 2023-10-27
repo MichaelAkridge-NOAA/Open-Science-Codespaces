@@ -12,7 +12,7 @@
         }
     },
     "postCreateCommand": [
-        "/app/setup_script.sh",
+        "mkdir -p /workspace","/workspace/setup_script.sh",
         "echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin"
     ],
     "runArgs": [

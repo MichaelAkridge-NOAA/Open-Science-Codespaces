@@ -1,6 +1,4 @@
 #!/bin/bash
-mkdir -p /workspace
-chmod -R 777 /workspace
 LOGFILE="/workspace/docker_log.txt"
 
 log() {
