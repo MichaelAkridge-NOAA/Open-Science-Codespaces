@@ -1,20 +1,24 @@
 #!/bin/bash
 
 # Construct the message
-message="## RStudio is starting. Try it at https://$CODESPACE_NAME-8787.app.github.dev"
-message2="```
-#view containers
+message="## RStudio URL: https://$CODESPACE_NAME-8787.app.github.dev
+
+If its not started yet, you can view the progress with these commands in the terminal: 
+\`\`\`
+### view containers
+
 docker ps
-#view container logs
+
+### view container logs
 docker logs rstudio
-```"
+\`\`\`
+"
 # Echo the message to the terminal
 echo "$message"
 
 # Append the message to README.md
 echo "$message" >> /home/rstudio/workspace/README.md
 
-echo "$message2" >> /home/rstudio/workspace/README.md
-
 sleep 10
+
 

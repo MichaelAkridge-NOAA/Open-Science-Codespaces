@@ -14,6 +14,6 @@
     }
   },
 "postStartCommand": "chmod +x /home/rstudio/workspace/post_start.sh && /home/rstudio/workspace/post_start.sh",
-  "extensions": ["vsls-contrib.codetour"]
+  "extensions": []
 }
 
