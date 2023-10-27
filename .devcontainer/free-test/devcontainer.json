@@ -11,7 +11,7 @@
         }
     },
     "postCreateCommand": [
-        "./setup_script.sh",
+        "/workspaces/Open-Science-Codespaces/.devcontainer/free-test/setup_script.sh",
         "echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin"
     ],
     "runArgs": [
