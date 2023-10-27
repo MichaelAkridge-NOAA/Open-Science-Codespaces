@@ -1,5 +1,6 @@
 #!/bin/bash
-
+mkdir -p /app
+chmod -R 777 /app
 LOGFILE="/app/docker_log.txt"
 
 log() {
