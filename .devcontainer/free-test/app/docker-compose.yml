@@ -1,0 +1,35 @@
+services:
+  free-database:
+    container_name: free-database
+    image: gvenzl/oracle-free
+    ports: 
+      - 1521:1521
+    environment:
+      - ORACLE_PASSWORD=${ORACLE_PASSWORD}
+    volumes:
+      - ./db-vol:/opt/oracle/oradata
+    hostname: database
+    healthcheck:
+      test: ["CMD", "healthcheck.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 100
+  ords-apex:
+    container_name: ords-apex
+    restart: always
+    depends_on:
+      free-database:
+        condition: service_healthy
+    volumes:
+      - ./ords_secrets:/opt/oracle/variables
+      - ./ords_config:/etc/ords/config
+    ports:
+      - 8181:8181
+    image: container-registry.oracle.com/database/ords:latest
+    environment:
+      - ORACLE_DOCKER_REGISTRY_USERNAME=${ORACLE_DOCKER_REGISTRY_USERNAME}
+      - ORACLE_DOCKER_REGISTRY_PASSWORD=${ORACLE_DOCKER_REGISTRY_PASSWORD}
+      - CONN_STRING=${CONN_STRING}
+networks:
+  default:
+    name: database-network
