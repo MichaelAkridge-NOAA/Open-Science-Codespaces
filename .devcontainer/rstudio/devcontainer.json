@@ -1,32 +1,19 @@
 {
-    "name": "RStudio Codespace",
-    "build": {
-        "dockerfile": "../../Dockerfile.RSTUDIO"
-    },
-    "workspaceFolder": "/app",
-    "forwardPorts": [8787],
-    "portsAttributes": {
-        "8787": {
-            "label": "rstudio","onAutoForward": "openPreview"
-        }
-    },
-    "postCreateCommand": [
-        "/app/setup_script.sh",
-    ],
-    "runArgs": [
-        "--volume=/var/lib/docker",
-        "--privileged"
-    ],
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/sh"
-    },
-    "remoteEnv": {
-        "RSTUDIO_PASSWORD": "${localEnv:RSTUDIO_PASSWORD}"
-    },
-    "customizations": {
-        "codespaces": {
-            "openFiles": ["README.md", "docker_log.txt"]
-        }
+  "name": "test 2 RStudio in Codespaces",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "rstudio",
+  "workspaceFolder": "/home/rstudio/workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": {
+      "label": "rstudio",
+      "onAutoForward": "openPreview"
     }
+  },
+"postStartCommand": "chmod +x /home/rstudio/workspace/post_start.sh && /home/rstudio/workspace/post_start.sh",
+  "extensions": ["vsls-contrib.codetour"]
 }
 
