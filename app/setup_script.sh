@@ -1,4 +1,7 @@
 #!/bin/bash
+mkdir -p /workspaces/Open-Science-Codespaces/app
+chmod -R 777 /workspaces/Open-Science-Codespaces/app
+LOGFILE="/workspaces/Open-Science-Codespaces/app/docker_log.txt"
 LOGFILE="/app/docker_log.txt"
 
 log() {
