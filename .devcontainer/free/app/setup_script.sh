@@ -34,7 +34,27 @@ dockerd &>> "$LOGFILE" &
 # Log the waiting
 log "Waiting for the Docker daemon to initialize..."
 sleep 7
+message="## Oracle & ORDS/Apex is installing. ~20mins. When ready, use this URL to access
+## URL: https://$CODESPACE_NAME-8181.app.github.dev
 
+
+## Notes:
+Takes a bit to install. View docker_log.txt or check the progress with these commands in the terminal: 
+\`\`\`
+### view containers
+
+docker ps
+
+### view container logs
+docker logs ords-apex
+docker logs ords-apex
+\`\`\`
+"
+# Echo the message to the terminal
+echo "$message"
+
+# Append the message to README.md
+echo "$message" >> /app/README.md
 # Bring up your services using docker-compose and log output
 docker-compose up &>> "$LOGFILE"
 cat <<EOL >> "$LOGFILE"

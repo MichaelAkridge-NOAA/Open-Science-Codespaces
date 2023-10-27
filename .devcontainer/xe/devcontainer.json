@@ -1,7 +1,7 @@
 {
     "name": "Oracle-XE-Apex Space",
     "build": {
-        "dockerfile": "../../Dockerfile.XE"
+        "dockerfile": "./Dockerfile.XE"
     },
     "workspaceFolder": "/app",
     "forwardPorts": [1521, 8181, 8000],
