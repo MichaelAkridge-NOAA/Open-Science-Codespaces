@@ -1,6 +1,7 @@
 #!/bin/bash
-
-LOGFILE="/app/docker_log.txt"
+mkdir -p /workspace
+chmod -R 777 /workspace
+LOGFILE="/workspace/docker_log.txt"
 
 log() {
     echo "$1" | tee -a "$LOGFILE"
