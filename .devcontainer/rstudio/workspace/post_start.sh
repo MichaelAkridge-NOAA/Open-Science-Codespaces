@@ -2,7 +2,7 @@
 
 # Construct the message
 message="## RStudio is starting. Try it at https://$CODESPACE_NAME-8787.app.github.dev"
-message2= "```
+message2="```
 #view containers
 docker ps
 #view container logs
