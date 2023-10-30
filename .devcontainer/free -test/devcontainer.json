@@ -1,8 +1,6 @@
 {
     "name": "TEST - Oracle-Free-Apex Space",
-    "build": {
-        "dockerfile": "./docker-compose.yml"
-    },
+    "dockerComposeFile": "./docker-compose.yml",
     "workspaceFolder": "/app",
     "forwardPorts": [1521, 8181],
     "portsAttributes": {

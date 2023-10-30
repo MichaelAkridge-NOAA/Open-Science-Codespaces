@@ -4,7 +4,7 @@
         "dockerfile": "./Dockerfile.XE"
     },
     "workspaceFolder": "/app",
-    "forwardPorts": [1521, 8181, 8000],
+    "forwardPorts": [1521, 8181],
     "portsAttributes": {
         "1521": {
             "label": "oracle-free"
