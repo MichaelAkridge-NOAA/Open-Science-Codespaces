@@ -1,4 +1,5 @@
 #!/bin/bash
+
 LOGFILE="/app/docker_log.txt"
 
 log() {
@@ -24,7 +25,7 @@ chmod -R 777 /app/ords_config
 chmod -R 777 /app/ords_secrets
 echo $CONN_STRING > /app/ords_secrets/conn_string.txt
 
-# Navigate to the workspace directory
+# Navigate to the app directory
 cd /app
 
 # Start the Docker daemon and log output
