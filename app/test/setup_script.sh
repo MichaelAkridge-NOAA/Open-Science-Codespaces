@@ -1,4 +1,6 @@
 #!/bin/bash
+mkdir -p /app
+chmod -R 777 /app
 mkdir -p /app/ords_secrets
 mkdir -p /app/ords_config
 mkdir -p /app/db-vol

@@ -10,7 +10,7 @@
             "onAutoForward": "openPreview"
         }
     },
-    "postCreateCommand": ["./setup_script.sh"
+    "postCreateCommand": ["./app/test/setup_script.sh"
     ],
     "settings": {
         "terminal.integrated.shell.linux": "/bin/sh"
