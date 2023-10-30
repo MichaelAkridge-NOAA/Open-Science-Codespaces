@@ -1,5 +1,5 @@
 {
-    "name": "TEST - Oracle-Free-Apex Space",
+    "name": "this is a TEST - Oracle-Free-Apex Space",
     "dockerComposeFile": "./docker-compose.yml",
     "workspaceFolder": "/app",
     "forwardPorts": [1521, 8181],
@@ -28,11 +28,6 @@
         "ORACLE_DOCKER_REGISTRY_USERNAME": "${localEnv:ORACLE_DOCKER_REGISTRY_USERNAME}",
         "ORACLE_DOCKER_REGISTRY_PASSWORD": "${localEnv:ORACLE_DOCKER_REGISTRY_PASSWORD}",
         "CONN_STRING": "${localEnv:CONN_STRING}"
-    },
-    "customizations": {
-        "codespaces": {
-            "openFiles": ["README.md", "docker_log.txt"]
-        }
     }
 }
 
