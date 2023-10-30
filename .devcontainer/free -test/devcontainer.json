@@ -10,8 +10,7 @@
             "onAutoForward": "openPreview"
         }
     },
-    "postCreateCommand": ["chmod +x /workspaces/Open-Science-Codespaces/app/test/setup_script.sh","/workspaces/Open-Science-Codespaces/app/test/setup_script.sh"
-    ],
+    "postCreateCommand": "chmod +x /workspaces/Open-Science-Codespaces/app/test/setup_script.sh && /workspaces/Open-Science-Codespaces/app/test/setup_script.sh",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/sh"
     },
