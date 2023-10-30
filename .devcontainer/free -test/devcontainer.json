@@ -1,5 +1,5 @@
 {
-    "name": "Oracle-Free-Apex Space",
+    "name": "TEST - Oracle-Free-Apex Space",
     "build": {
         "dockerfile": "./docker-compose.yml"
     },
