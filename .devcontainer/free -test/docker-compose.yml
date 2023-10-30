@@ -8,6 +8,7 @@ services:
       - ORACLE_PASSWORD=${ORACLE_PASSWORD}
     volumes:
       - ./db-vol:/opt/oracle/oradata
+      - ./app:/app
     hostname: database
     healthcheck:
       test: ["CMD", "healthcheck.sh"]
