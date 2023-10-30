@@ -1,5 +1,5 @@
 {
-    "name": "this is a TEST - Oracle-Free-Apex Space",
+    "name": "TEST TEST Oracle-XE-Apex Space",
     "dockerComposeFile": "./docker-compose.yml",
     "workspaceFolder": "/app",
     "forwardPorts": [1521, 8181],
@@ -13,7 +13,6 @@
         }
     },
     "postCreateCommand": [
-        "/app/setup_script.sh",
         "echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin"
     ],
     "settings": {

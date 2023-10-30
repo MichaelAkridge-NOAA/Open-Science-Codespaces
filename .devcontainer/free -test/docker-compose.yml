@@ -1,7 +1,7 @@
 services:
   free-database:
     container_name: free-database
-    image: gvenzl/oracle-free
+    build: ./free-database
     ports: 
       - 1521:1521
     environment:
@@ -26,7 +26,10 @@ services:
       - ./ords_config:/etc/ords/config
     ports:
       - 8181:8181
-    image: container-registry.oracle.com/database/ords:latest
+    build:
+      context: ./ords-apex
+      args:
+        CONN_STRING: ${CONN_STRING}
     environment:
       - ORACLE_DOCKER_REGISTRY_USERNAME=${ORACLE_DOCKER_REGISTRY_USERNAME}
       - ORACLE_DOCKER_REGISTRY_PASSWORD=${ORACLE_DOCKER_REGISTRY_PASSWORD}
