@@ -1,6 +1,6 @@
 {
     "name": "TEST  Oracle-XE-Apex Space",
-    "workspaceFolder": "/app",
+    "workspaceFolder": "./app",
     "forwardPorts": [1521, 8181],
     "portsAttributes": {
         "1521": {
@@ -11,8 +11,7 @@
             "onAutoForward": "openPreview"
         }
     },
-    "postCreateCommand": [
-        "echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin","./setup_script.sh"
+    "postCreateCommand": ["./setup_script.sh"
     ],
     "settings": {
         "terminal.integrated.shell.linux": "/bin/sh"
