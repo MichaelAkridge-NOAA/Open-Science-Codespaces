@@ -9,7 +9,7 @@
             "label": "ords-apex"
         }
     },
-    "postCreateCommand": "chmod +x /workspaces/Open-Science-Codespaces/app/setup_script.sh && /workspaces/Open-Science-Codespaces/app/setup_script.sh",
+    "postCreateCommand": "chmod +x /workspaces/Open-Science-Codespaces/app/free-app/setup_script.sh && /workspaces/Open-Science-Codespaces/app/free-app/setup_script.sh",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/sh"
     },
