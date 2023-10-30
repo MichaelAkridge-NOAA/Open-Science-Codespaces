@@ -10,7 +10,7 @@
             "onAutoForward": "openPreview"
         }
     },
-    "postCreateCommand": "chmod +x /workspaces/Open-Science-Codespaces/app/test/setup_script.sh && /workspaces/Open-Science-Codespaces/app/test/setup_script.sh",
+    "postCreateCommand": "echo $ORACLE_DOCKER_REGISTRY_PASSWORD | docker login container-registry.oracle.com --username $ORACLE_DOCKER_REGISTRY_USERNAME --password-stdin && chmod +x /workspaces/Open-Science-Codespaces/app/test/setup_script.sh && /workspaces/Open-Science-Codespaces/app/test/setup_script.sh",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/sh"
     },
