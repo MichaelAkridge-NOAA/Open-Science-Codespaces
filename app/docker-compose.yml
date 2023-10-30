@@ -1,6 +1,7 @@
 services:
   free-database:
     container_name: free-database
+    restart: always
     image: gvenzl/oracle-free
     ports: 
       - 1521:1521
@@ -30,6 +31,3 @@ services:
       - ORACLE_DOCKER_REGISTRY_USERNAME=${ORACLE_DOCKER_REGISTRY_USERNAME}
       - ORACLE_DOCKER_REGISTRY_PASSWORD=${ORACLE_DOCKER_REGISTRY_PASSWORD}
       - CONN_STRING=${CONN_STRING}
-networks:
-  default:
-    name: database-network
