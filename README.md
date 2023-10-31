@@ -1,7 +1,7 @@
 # Open Science Codespaces
 <img src="./docs/logo.JPG" align="right" alt="logo" width="400"/>
 
-Create & Access Complete Github Codespaces quickly and easily. This repo setups temporary development Codespaces.
+Create & Access Complete Codespaces quickly and easily. This repo setups temporary development Github Codespaces for RStudio, Oracle and more.
 
 ## List of Codespace
 1. **[RStudio Codespace](#rstudio-codespace)**
