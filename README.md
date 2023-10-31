@@ -49,6 +49,7 @@ The following details deploying an Oracle Free(or XE, etc) database and ORDS/Ape
 5. And done. The codespace will initialize itself by building the container based on the provided Dockerfile and start the services based on the `docker-compose.yml` file.
 
 ## Prerequisites
+0. Clone this Repo if not so already. 
 1. <mark>Create an Oracle account for access to the Oracle Image Registry (needed for access to Oracle Docker Images)</mark>
 	- [Oracle Image/Container Registry](https://container-registry.oracle.com/ords/f?p=113:10)
 
