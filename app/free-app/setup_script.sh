@@ -27,7 +27,8 @@ chmod -R 777 /workspaces/Open-Science-Codespaces/app/free-app/ords_config
 chmod -R 777 /workspaces/Open-Science-Codespaces/app/free-app/ords_secrets
 echo $CONN_STRING > /workspaces/Open-Science-Codespaces/app/free-app/ords_secrets/conn_string.txt
 
-gh codespace ports visibility 8181:public -c $CODESPACE_NAME
+# uncomment to make ords/apex visibility public 
+#gh codespace ports visibility 8181:public -c $CODESPACE_NAME
 
 # Navigate to the app directory
 cd /workspaces/Open-Science-Codespaces/app/free-app
