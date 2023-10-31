@@ -1,10 +1,26 @@
 # Open Science Codespaces
 Create & Access Complete Codespaces quickly and easily. This repo setups temporary development Codespaces.  
+## List of Codespaces
+1. **[RStudio Codespace](#rstudio-codespace)**
+2. **[Oracle Database & ORDS/APEX Dev Space](#oracle-codespace)**
+***
+# RStudio Codespace
+For RStudio, just click this button to start codesapce
 
-### For RStudio, just click this button
 [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)
-
-### For an Oracle Database Codespace, checkout the quickstart below
+- this codespace uses default RStudio docker image from https://rocker-project.org/
+- update ".devcontainer/rstudio/docker-compose.yml" file to select desired setup
+```
+# replace image(rocker/rstudio:latest) in docker-compose.yml file
+# with any of the ones below or at https://hub.docker.com/u/rocker
+# Examples
+rocker/tidyverse
+rocker/geospatial
+rocker/shiny
+```
+***
+# Oracle Codespace
+### For an Oracle Database & ORDS/Apex Codespace, checkout the quickstart below
 The following details deploying an Oracle Free(or XE, etc) database and ORDS/Apex application for development and testing. Configs are defined in the `devcontainer.json` file & associated Docker and Docker Compose files. Workflow can be applied to other docker deployed apps and additional data can be added and/or installed.
 # Table of Contents
 1. **[Quick Start](#quick-start)**
