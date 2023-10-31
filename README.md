@@ -48,7 +48,7 @@ The following details deploying an Oracle Free(or XE, etc) database and ORDS/Ape
 ## Quick Start
 1. Clone this repository.
 2. Review Prerequisites, and ensure that all have been satisfied before proceeding.
-4. Click Deploy 
+4. Click Deploy (after updating links)
 5. And done. The codespace will initialize itself by building the container based on the provided Dockerfile and start the services based on the `docker-compose.yml` file.
 
 ## Prerequisites
@@ -73,7 +73,7 @@ CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
 ![](./docs/02.png)
 ![](./docs/03.png)
 
-3. Udpate README.md Github Codespace Deeplinks for Oracle Free & XE (https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/setting-up-your-repository/facilitating-quick-creation-and-resumption-of-codespaces)
+3. Update README.md Github Codespace Deeplinks for Oracle Free & XE (https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/setting-up-your-repository/facilitating-quick-creation-and-resumption-of-codespaces)
 
 # Deploy
 ### Oracle Free(or XE) Database & ORDS-Apex App using Github Codespaces
