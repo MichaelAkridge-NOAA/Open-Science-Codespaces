@@ -73,7 +73,7 @@ CONN_STRING=sys/<insert-passwrod-here>@database:1521/XEPDB1
 ### Oracle Free(or XE) Database & ORDS-Apex App using Github Codespaces
 Once Prerequisites are met, you can deploy with a click of these buttons. 
 
-[![Open Oracle Free in GitHub Codespaces](./docs/badge_free.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Ffree%2Fdevcontainer.json)[![Open Oracle XE in GitHub Codespaces](./docs/badge_xe.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Fxe%2Fdevcontainer.json)
+[![Open Oracle Free in GitHub Codespaces](./docs/badge_free.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?quickstart=1&devcontainer_path=.devcontainer%2Foracle_free%2Fdevcontainer.json)[![Open Oracle XE in GitHub Codespaces](./docs/badge_xe.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?quickstart=1&devcontainer_path=.devcontainer%2Foracle_xe%2Fdevcontainer.json)
 
 ## Startup
 1. The system will open up to VS code editor as its installing via docker in the background.
