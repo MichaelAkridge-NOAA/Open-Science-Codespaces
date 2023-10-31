@@ -1,5 +1,5 @@
 services:
-  free-database:
+  xe-database:
     container_name: xe-database
     restart: always
     image: gvenzl/oracle-xe
