@@ -2,7 +2,8 @@
 Create & Access Complete Codespaces quickly and easily. This repo setups temporary development Codespaces.  
 ## List of Codespaces
 1. **[RStudio Codespace](#rstudio-codespace)**
-2. **[Oracle Database & ORDS/APEX Dev Space](#oracle-codespace)**
+2. **[Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)**
+3. **[Oracle Database & ORDS/APEX Dev Space](#oracle-codespace)**
 ***
 # RStudio Codespace
 For RStudio, just click this button to start codesapce
@@ -18,6 +19,12 @@ rocker/tidyverse
 rocker/geospatial
 rocker/shiny
 ```
+***
+# [Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
+RStudio Github Codespace with EDS project files. The EDS allows users to download/filter/extract/summarize large amounts of gridded and tabular data given user-defined time stamps and geographical coordinates. The various external environmental data summarized at individual survey sites can aid scientists to assess and understand how living marine resources are impacted by the environmental variabilities.
+![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/02.png)
+![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/01.png))
+
 ***
 # Oracle Codespace
 ### For an Oracle Database & ORDS/Apex Codespace, checkout the quickstart below
