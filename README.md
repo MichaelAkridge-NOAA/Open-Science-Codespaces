@@ -1,5 +1,5 @@
 # Open Science Codespaces
-Create & Access Complete Codespaces quickly and easily. This repo setups temporary development Codespaces.  
+Create & Access Complete Github Codespaces quickly and easily. This repo setups temporary development Codespaces.  
 ## List of Codespaces
 1. **[RStudio Codespace](#rstudio-codespace)**
 2. **[Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)**
