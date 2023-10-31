@@ -9,7 +9,7 @@ Create & Access Complete Codespaces quickly and easily. This repo setups tempora
 3. **[Oracle Database & ORDS/APEX Dev Space](#oracle-codespace)**
 ***
 # RStudio Codespace
-For RStudio, just click this button to start codesapce
+For RStudio, just click this button to start codespace
 
 [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)
 - this codespace uses default RStudio docker image from https://rocker-project.org/
