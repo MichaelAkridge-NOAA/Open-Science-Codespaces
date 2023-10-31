@@ -11,7 +11,7 @@ docker ps
 ### view container logs
 docker logs ords-apex
 
-# Access Oracle Apex
+# Access Oracle Apex (wait for install to complete)
 ## [Click to Open Apex](https://$CODESPACE_NAME-8181.app.github.dev)
 "
 # Append the message to README.md
