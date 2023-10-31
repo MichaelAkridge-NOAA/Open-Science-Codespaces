@@ -1,5 +1,5 @@
 {
-    "name": "Oracle-Free-Apex Space",
+    "name": "(Docker in Docker)Oracle-Free-Apex Space",
     "build": {
         "dockerfile": "./Dockerfile.FREE"
     },

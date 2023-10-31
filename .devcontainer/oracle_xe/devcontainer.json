@@ -1,15 +1,15 @@
 {
-    "name": "OracleSpace3",
+    "name": "Oracle-XE-Apex Codespace",
     "forwardPorts": [1521, 8181],
     "portsAttributes": {
         "1521": {
-            "label": "oracle-free"
+            "label": "oracle-xe"
         },
         "8181": {
             "label": "ords-apex"
         }
     },
-    "postCreateCommand": "chmod +x /workspaces/Open-Science-Codespaces/app/free-app/setup_script.sh && /workspaces/Open-Science-Codespaces/app/free-app/setup_script.sh",
+    "postCreateCommand": "chmod +x /workspaces/Open-Science-Codespaces/app/xe-app/setup_script.sh && /workspaces/Open-Science-Codespaces/app/xe-app/setup_script.sh",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/sh"
     },
@@ -17,7 +17,7 @@
         "ORACLE_PASSWORD": "${localEnv:ORACLE_PASSWORD}",
         "ORACLE_DOCKER_REGISTRY_USERNAME": "${localEnv:ORACLE_DOCKER_REGISTRY_USERNAME}",
         "ORACLE_DOCKER_REGISTRY_PASSWORD": "${localEnv:ORACLE_DOCKER_REGISTRY_PASSWORD}",
-        "CONN_STRING": "${localEnv:CONN_STRING}"
+        "XE_CONN_STRING": "${localEnv:XE_CONN_STRING}"
     }
 }
 

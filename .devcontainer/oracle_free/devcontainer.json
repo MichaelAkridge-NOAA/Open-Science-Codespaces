@@ -1,16 +1,15 @@
 {
-    "name": "TEST Oracle-XE-Apex Space",
+    "name": "Oracle-Free-Apex Codespace",
     "forwardPorts": [1521, 8181],
     "portsAttributes": {
         "1521": {
             "label": "oracle-free"
         },
         "8181": {
-            "label": "ords-apex",
-            "onAutoForward": "openPreview"
+            "label": "ords-apex"
         }
     },
-    "postCreateCommand": "chmod +x /workspaces/Open-Science-Codespaces/app/setup_script.sh && /workspaces/Open-Science-Codespaces/app/setup_script.sh",
+    "postCreateCommand": "chmod +x /workspaces/Open-Science-Codespaces/app/free-app/setup_script.sh && /workspaces/Open-Science-Codespaces/app/free-app/setup_script.sh",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/sh"
     },
