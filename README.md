@@ -1,7 +1,11 @@
 # Open Science Codespaces
 <img src="./docs/logo.JPG" align="right" alt="logo" width="400"/>
 
-Create & Access Complete Codespaces quickly and easily. This repo setups temporary development Github Codespaces for RStudio, Oracle and more.
+Create & Access Complete Cloud Compute Working Environments(Codespaces) quickly and easily. This repo setups temporary Github Codespaces for RStudio, Oracle and more. These can be used for
+- Reproducible Science Setups
+- Workshops
+- Portable Development
+- and more!
 
 ## List of Codespace
 1. **[RStudio Codespace](#rstudio-codespace)**
