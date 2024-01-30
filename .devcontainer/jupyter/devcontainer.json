@@ -9,7 +9,7 @@
   "customizations": {
     "codespaces": {
       "openFiles": []
-    },"postStartCommand": "chmod +x post_start.sh && post_start.sh",
+    },"postStartCommand": "chmod +x /.devcontainer/jupyter/app/post_start.sh && /.devcontainer/jupyter/app/post_start.sh",
     "vscode": {
       "extensions": [
         "ms-toolsai.jupyter",
