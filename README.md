@@ -7,12 +7,15 @@ Quick & Easy Cloud Working Environments(Codespaces). This repo setups Github Cod
 - Portable Development
 - and more!
 
-## List of Codespaces
+### List of Codespaces
 1. **[RStudio Codespaces](#rstudio-codespace)**
 2. **[Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)**
+
 ***
+
 # RStudio Codespaces
-Just click codespace button to quick start codespace:
+
+Just click the button below to quickly start a codespace:
 
 | Codespace   | QuickStart Link | Image | Description | 
 | ----------- | ----------- |----------- | ----------- |
@@ -20,7 +23,7 @@ Just click codespace button to quick start codespace:
 | RStudio Tidyverse |  [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-tidyverse%2Fdevcontainer.json)     | rocker/tidyverse | Adds tidyverse packages & devtools | 
 | RStudio Verse |  [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-verse%2Fdevcontainer.json)     | rocker/verse | Adds tex & publishing-related package | 
 | RStudio Geospatial |  [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-geospatial%2Fdevcontainer.json)     | rocker/geospatial | Adds geospatial packages | 
-| RStudio Shiny |  [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-shiny%2Fdevcontainer.json)     | rocker/shiny | Adds shiny server | 
+| RStudio Shiny Server|  [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-shiny%2Fdevcontainer.json)     | rocker/shiny | Adds shiny server | 
 
 ### Screenshots 
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_01.png)
