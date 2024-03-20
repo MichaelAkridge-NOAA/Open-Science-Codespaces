@@ -1,0 +1,13 @@
+services:
+  rstudio:
+    container_name: rstudio-shiny
+    image: rocker/shiny:latest
+    ports:
+      - "3838:3838"
+    volumes:
+      - ./.rstudio_config:/home/rstudio/.config/rstudio
+      - ./workspace:/home/rstudio/workspace
+      - ./other_dir:/other_dir
+    environment:
+      - DISABLE_AUTH=true
+
