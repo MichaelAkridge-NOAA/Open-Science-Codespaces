@@ -26,6 +26,14 @@ rocker/tidyverse
 rocker/geospatial
 rocker/shiny
 ```
+| Codespace   | QuickStart Link | Image | Description | 
+| ----------- | ----------- |----------- | ----------- |
+| RStudio | [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)   | rocker/rstudio     | Adds RStudio Server. Install R from source and set RSPM as default CRAN mirror	|
+| RStudio Tidyverse | link   | rocker/tidyverse | Adds tidyverse packages & devtools | 
+| RStudio Verse | link   | rocker/verse | Adds tex & publishing-related package | 
+| RStudio Geospatial | link   | rocker/geospatial | Adds geospatial packages | 
+| RStudio Shiny | link   | rocker/shiny | Adds shiny server | 
+| RStudio Shiny Verse | link   | rocker/shiny-verse | Adds tidyverse packages to shiny | 
 ### Screenshots 
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_01.png)
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_02.png)
