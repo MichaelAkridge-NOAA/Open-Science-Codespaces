@@ -28,7 +28,7 @@ Just click the button below to quickly start a codespace:
 ### Screenshots 
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_01.png)
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_02.png)
-
+![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_03.png)
 # More Info
 These codespaces use the images from the Rocker Project. More info:
 - https://rocker-project.org/images/
