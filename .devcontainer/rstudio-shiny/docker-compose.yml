@@ -3,7 +3,7 @@ services:
     container_name: rstudio-shiny
     image: rocker/shiny:latest
     ports:
-      - "8787:8787"
+      - "3838:3838"
     volumes:
       - ./.rstudio_config:/home/rstudio/.config/rstudio
       - ./workspace:/home/rstudio/workspace
