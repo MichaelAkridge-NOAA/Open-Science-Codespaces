@@ -36,12 +36,6 @@ Just click the button below to quickly start a codespace:
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_01.png)
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_02.png)
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/0938ac017b521a0b6fac11f9be2c0923b4d4b3fb/docs/rs_shiny_01.png)
-# More Info
-These codespaces use the images from the Rocker Project. 
-- https://rocker-project.org/images/
-- https://hub.docker.com/u/rocker
-Learn more about using images, dockerfiles, compose, and devcontainers:
-- https://containers.dev/guide/dockerfile
 
 ***
 # [Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
@@ -70,7 +64,7 @@ Links to various python based codespaces.
     - About Github Codespaces: https://github.com/features/codespaces
     - About using images, dockerfiles, compose, and devcontainers: https://containers.dev/guide/dockerfile
 
-The R codespaces use the images from the Rocker Project. 
+The R codespaces use the images from the Rocker Project. For more info, please visit:
 - https://rocker-project.org/images/
 - https://hub.docker.com/u/rocker
 
