@@ -7,36 +7,30 @@ Quick & Easy Cloud Working Environments(Codespaces). This repo setups Github Cod
 - Portable Development
 - and more!
 
-## List of Codespace
-1. **[RStudio Codespace](#rstudio-codespace)**
+## List of Codespaces
+1. **[RStudio Codespaces](#rstudio-codespace)**
 2. **[Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)**
-3. **[](#-codespace)**
 ***
-# RStudio Codespace
-For RStudio, just click this button to start codespace
+# RStudio Codespaces
+Just click codespace button to quick start codespace:
 
-[![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)
-- this codespace uses default RStudio docker image from https://rocker-project.org/
-- update ".devcontainer/rstudio/docker-compose.yml" file to select desired setup
-```
-# replace image(rocker/rstudio:latest) in docker-compose.yml file
-# with any of the ones below or at https://hub.docker.com/u/rocker
-# Examples
-rocker/tidyverse
-rocker/geospatial
-rocker/shiny
-```
 | Codespace   | QuickStart Link | Image | Description | 
 | ----------- | ----------- |----------- | ----------- |
 | RStudio | [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)   | rocker/rstudio     | Adds RStudio Server. Install R from source and set RSPM as default CRAN mirror	|
-| RStudio Tidyverse | link   | rocker/tidyverse | Adds tidyverse packages & devtools | 
-| RStudio Verse | link   | rocker/verse | Adds tex & publishing-related package | 
-| RStudio Geospatial | link   | rocker/geospatial | Adds geospatial packages | 
-| RStudio Shiny | link   | rocker/shiny | Adds shiny server | 
-| RStudio Shiny Verse | link   | rocker/shiny-verse | Adds tidyverse packages to shiny | 
+| RStudio Tidyverse |  [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-tidyverse%2Fdevcontainer.json)     | rocker/tidyverse | Adds tidyverse packages & devtools | 
+| RStudio Verse |  [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-verse%2Fdevcontainer.json)     | rocker/verse | Adds tex & publishing-related package | 
+| RStudio Geospatial |  [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-geospatial%2Fdevcontainer.json)     | rocker/geospatial | Adds geospatial packages | 
+| RStudio Shiny |  [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-shiny%2Fdevcontainer.json)     | rocker/shiny | Adds shiny server | 
+
 ### Screenshots 
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_01.png)
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_02.png)
+
+# More Info
+These codespaces use the images from the Rocker Project. More info:
+- https://rocker-project.org/images/
+- https://hub.docker.com/u/rocker
+
 ***
 # [Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
 [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/ncei_eds_codespace?quickstart=1)
@@ -45,8 +39,6 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 ## [(Learn More)](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
 ![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/02.png)
 ![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/01.png)
-
-***
 
 ----------
 #### Disclaimer
