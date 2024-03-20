@@ -1,0 +1,19 @@
+{
+  "name": "RStudio Geospatial Codespace",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "rstudio",
+  "workspaceFolder": "/home/rstudio/workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": {
+      "label": "rstudio",
+      "onAutoForward": "openPreview"
+    }
+  },
+"postStartCommand": "chmod +x /home/rstudio/workspace/post_start.sh && /home/rstudio/workspace/post_start.sh",
+  "extensions": []
+}
+
