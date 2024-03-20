@@ -16,6 +16,7 @@ Quick & Easy Cloud Working Environments(Codespaces). This repo setups Github Cod
     - Shiny Server
     - [Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
 2. **[Python Codespaces](#python-codespaces)**
+3. **[Resources, Links & More Info](#resources-more-info)**
 
 ***
 
@@ -63,6 +64,15 @@ Links to various python based codespaces.
 | Streamlit  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/snehankekre/st-codespaces?quickstart=1) | [snehankekre/st-codespaces](https://github.com/snehankekre/st-codespaces/)| 
 | Anaconda  |  | [devcontainers/templates/anaconda](https://github.com/devcontainers/templates/tree/main/src/anaconda)| 
 | Datascience Py & R  |   | [microsoft/datascience-py-r](https://github.com/microsoft/datascience-py-r)| 
+***
+# Resources & More Info
+- Learn More
+    - About Github Codespaces: https://github.com/features/codespaces
+    - About using images, dockerfiles, compose, and devcontainers: https://containers.dev/guide/dockerfile
+
+The R codespaces use the images from the Rocker Project. 
+- https://rocker-project.org/images/
+- https://hub.docker.com/u/rocker
 
 ----------
 #### Disclaimer
