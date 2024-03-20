@@ -59,6 +59,7 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 | Jupyter Data Science  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/devcontainers-community/templates-jupyter-datascience-notebooks) |[devcontainers-community/jupyter-datascience-notebooks](https://github.com/devcontainers-community/templates-jupyter-datascience-notebooks) | 
 | NASA Openscapes Earhdata Cloud Cookbook  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/NASA-Openscapes/earthdata-cloud-cookbook?quickstart=1&editor=jupyter)|[NASA-Openscapes/earthdata-cloud-cookbook](https://github.com/NASA-Openscapes/earthdata-cloud-cookbook) | 
 | Flask  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/codespaces-flask) | [github/codespaces-flask](https://github.com/github/codespaces-flask)| 
+| Streamlit  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/snehankekre/st-codespaces?quickstart=1) | [snehankekre/st-codespaces](https://github.com/snehankekre/st-codespaces/)| 
 | Anaconda  |  | [devcontainers/templates/anaconda](https://github.com/devcontainers/templates/tree/main/src/anaconda)| 
 | Datascience Py & R  |   | [microsoft/datascience-py-r](https://github.com/microsoft/datascience-py-r)| 
 
