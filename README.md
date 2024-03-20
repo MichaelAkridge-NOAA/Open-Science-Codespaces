@@ -36,9 +36,11 @@ Just click the button below to quickly start a codespace:
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_02.png)
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/0938ac017b521a0b6fac11f9be2c0923b4d4b3fb/docs/rs_shiny_01.png)
 # More Info
-These codespaces use the images from the Rocker Project. More info:
+These codespaces use the images from the Rocker Project. 
 - https://rocker-project.org/images/
 - https://hub.docker.com/u/rocker
+Learn more about using images, dockerfiles, compose, and devcontainers:
+- https://containers.dev/guide/dockerfile
 
 ***
 # [Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
@@ -50,11 +52,15 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 ![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/01.png)
 ***
 # Python Codespaces
-- https://github.com/github/codespaces-jupyter
-- https://github.com/devcontainers-community/templates-jupyter-datascience-notebooks
-- https://github.com/devcontainers/templates/tree/main/src/anaconda
-- https://github.com/microsoft/datascience-py-r
-- https://github.com/NASA-Openscapes/earthdata-cloud-cookbook
+
+| Codespace   | QuickStart Link  | Description | 
+| ----------- | ----------- |----------- |
+| Jupyter Notebook  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/codespaces-jupyter)  |https://github.com/github/codespaces-jupyter | 
+| Jupyter Data Science  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/devcontainers-community/templates-jupyter-datascience-notebooks) |https://github.com/devcontainers-community/templates-jupyter-datascience-notebooks | 
+| NASA Openscapes Earhdata Cloud Cookbook  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/eeholmes/earthdata-cloud-cookbook?quickstart=1&editor=jupyter)|https://github.com/NASA-Openscapes/earthdata-cloud-cookbook | 
+| Flask  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/codespaces-flask) | https://github.com/github/codespaces-flask| 
+| Anaconda  |  | https://github.com/devcontainers/templates/tree/main/src/anaconda| 
+| Datascience Py & R  |   |https://github.com/microsoft/datascience-py-r | 
 
 
 ----------
