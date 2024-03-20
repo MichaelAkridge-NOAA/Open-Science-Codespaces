@@ -14,7 +14,8 @@ Quick & Easy Cloud Working Environments(Codespaces). This repo setups Github Cod
     - Verse
     -  Geospatial
     - Shiny Server
-2. **[Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)**
+    - [Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
+2. **[Python Codespaces](#python-codespaces)**
 
 ***
 
@@ -47,6 +48,11 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 ## [(Learn More)](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
 ![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/02.png)
 ![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/01.png)
+***
+# Python Codespaces
+
+Placeholder -
+
 
 ----------
 #### Disclaimer
