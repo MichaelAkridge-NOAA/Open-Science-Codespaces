@@ -55,12 +55,12 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 
 | Codespace   | QuickStart Link  | Description | 
 | ----------- | ----------- |----------- |
-| Jupyter Notebook  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/codespaces-jupyter)  |https://github.com/github/codespaces-jupyter | 
-| Jupyter Data Science  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/devcontainers-community/templates-jupyter-datascience-notebooks) |https://github.com/devcontainers-community/templates-jupyter-datascience-notebooks | 
-| NASA Openscapes Earhdata Cloud Cookbook  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/eeholmes/earthdata-cloud-cookbook?quickstart=1&editor=jupyter)|https://github.com/NASA-Openscapes/earthdata-cloud-cookbook | 
-| Flask  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/codespaces-flask) | https://github.com/github/codespaces-flask| 
-| Anaconda  |  | https://github.com/devcontainers/templates/tree/main/src/anaconda| 
-| Datascience Py & R  |   |https://github.com/microsoft/datascience-py-r | 
+| Jupyter Notebook  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/codespaces-jupyter)  |<h6>https://github.com/github/codespaces-jupyter<h6> | 
+| Jupyter Data Science  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/devcontainers-community/templates-jupyter-datascience-notebooks) |<h6>https://github.com/devcontainers-community/templates-jupyter-datascience-notebooks<h6> | 
+| NASA Openscapes Earhdata Cloud Cookbook  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/eeholmes/earthdata-cloud-cookbook?quickstart=1&editor=jupyter)|<h6>https://github.com/NASA-Openscapes/earthdata-cloud-cookbook<h6> | 
+| Flask  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/codespaces-flask) | <h6>https://github.com/github/codespaces-flask<h6>| 
+| Anaconda  |  | <h6>https://github.com/devcontainers/templates/tree/main/src/anaconda<h6>| 
+| Datascience Py & R  |   |<h6>https://github.com/microsoft/datascience-py-r<h6> | 
 
 
 ----------
