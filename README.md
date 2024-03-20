@@ -63,6 +63,7 @@ Links to various python based codespaces.
 - Learn More
     - About Github Codespaces: https://github.com/features/codespaces
     - About using images, dockerfiles, compose, and devcontainers: https://containers.dev/guide/dockerfile
+    - About Docker: https://docs.docker.com/
 
 The R codespaces use the images from the Rocker Project. For more info, please visit:
 - https://rocker-project.org/images/
