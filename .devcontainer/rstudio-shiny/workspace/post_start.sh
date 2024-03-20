@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Construct the message
-message="## [Click to Open RStudio](https://$CODESPACE_NAME-8787.app.github.dev)
+message="## [Click to Open Shiny](https://$CODESPACE_NAME-3838.app.github.dev)
 "
 # Echo the message to the terminal
 echo "$message"

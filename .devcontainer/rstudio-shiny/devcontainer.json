@@ -6,7 +6,7 @@
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
-  "forwardPorts": [8787],
+  "forwardPorts": [3838],
   "portsAttributes": {
     "8787": {
       "label": "rstudio",
