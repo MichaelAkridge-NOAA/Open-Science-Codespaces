@@ -50,8 +50,11 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 ![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/01.png)
 ***
 # Python Codespaces
-
-Placeholder -
+- https://github.com/github/codespaces-jupyter
+- https://github.com/devcontainers-community/templates-jupyter-datascience-notebooks
+- https://github.com/devcontainers/templates/tree/main/src/anaconda
+- https://github.com/microsoft/datascience-py-r
+- https://github.com/NASA-Openscapes/earthdata-cloud-cookbook
 
 
 ----------
