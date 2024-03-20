@@ -22,13 +22,13 @@ Quick & Easy Cloud Working Environments(Codespaces). This repo setups Github Cod
 
 Just click the button below to quickly start a codespace:
 
-| Codespace   | QuickStart Link | Image | Description | 
-| ----------- | ----------- |----------- | ----------- |
-| RStudio | [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)   | rocker/rstudio     | Adds RStudio Server. Install R from source and set RSPM as default CRAN mirror	|
-| RStudio Tidyverse | [![Open in GitHub Codespaces](./docs/badge_rstudio_tidyverse.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-tidyverse%2Fdevcontainer.json)   | rocker/tidyverse | Adds tidyverse packages & devtools. R packages for data science | 
-| RStudio Verse | [![Open in GitHub Codespaces](./docs/badge_rstudio_tidyverse.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-verse%2Fdevcontainer.json)  | rocker/verse | Adds tex & publishing-related package to tidyverse | 
-| RStudio Geospatial |   [![Open in GitHub Codespaces](./docs/badge_rstudio_geospatial.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-geospatial%2Fdevcontainer.json)   | rocker/geospatial | Adds geospatial packages | 
-| RStudio Shiny Server| [![Open in GitHub Codespaces](./docs/badge_rstudio_shiny.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-shiny%2Fdevcontainer.json)   | rocker/shiny | Adds shiny server | 
+| Codespace   | QuickStart Link  | Description | 
+| ----------- | ----------- |----------- |
+| RStudio | [![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)   |  Adds RStudio Server. Install R from source and set RSPM as default CRAN mirror	|
+| RStudio Tidyverse | [![Open in GitHub Codespaces](./docs/badge_rstudio_tidyverse.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-tidyverse%2Fdevcontainer.json)   |Adds tidyverse packages & devtools. R packages for data science | 
+| RStudio Verse | [![Open in GitHub Codespaces](./docs/badge_rstudio_tidyverse.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-verse%2Fdevcontainer.json)  | Adds tex & publishing-related package to tidyverse | 
+| RStudio Geospatial |   [![Open in GitHub Codespaces](./docs/badge_rstudio_geospatial.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-geospatial%2Fdevcontainer.json)   | Adds geospatial packages | 
+| RStudio Shiny Server| [![Open in GitHub Codespaces](./docs/badge_rstudio_shiny.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-shiny%2Fdevcontainer.json)   | Adds shiny server | 
 
 ### Screenshots 
 ![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_01.png)
