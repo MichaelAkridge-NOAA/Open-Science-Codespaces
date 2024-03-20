@@ -52,6 +52,7 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 ![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/01.png)
 ***
 # Python Codespaces
+Links to various python based codespaces.
 
 | Codespace  | QuickStart Link | Description | 
 | ----------- | ----------- |----------- |
