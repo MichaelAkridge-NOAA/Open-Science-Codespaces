@@ -8,12 +8,17 @@ Quick & Easy Cloud Working Environments(Codespaces). This repo setups Github Cod
 - and more!
 
 ### List of Codespaces
-1. **[RStudio Codespaces](#rstudio-codespace)**
+1. **[R Codespaces](#r-codespaces)**
+    - RStudio
+    - Tidyverse
+    - Verse
+    -  Geospatial
+    - Shiny Server
 2. **[Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)**
 
 ***
 
-# RStudio Codespaces
+# R Codespaces
 
 Just click the button below to quickly start a codespace:
 
