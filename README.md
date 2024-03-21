@@ -1,42 +1,8 @@
 # Open Science Codespaces
 <img src="./docs/logo.JPG" align="right" alt="logo" width="400"/>
 
-Quick & Easy Cloud Working Environments(Codespaces). This repo setups Github Codespaces for RStudio, Oracle and more. These can be used for
-- Reproducible Science Setups
-- Workshops
-- Portable Development
-- and more!
-
-## List of Codespace
-1. **[RStudio Codespace](#rstudio-codespace)**
-2. **[Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)**
-3. **[Oracle Database & ORDS/APEX Dev Space](#oracle-codespace)**
+ **[Oracle Database & ORDS/APEX Dev Space](#oracle-codespace)**
 ***
-# RStudio Codespace
-For RStudio, just click this button to start codespace
-
-[![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio%2Fdevcontainer.json)
-- this codespace uses default RStudio docker image from https://rocker-project.org/
-- update ".devcontainer/rstudio/docker-compose.yml" file to select desired setup
-```
-# replace image(rocker/rstudio:latest) in docker-compose.yml file
-# with any of the ones below or at https://hub.docker.com/u/rocker
-# Examples
-rocker/tidyverse
-rocker/geospatial
-rocker/shiny
-```
-### Screenshots 
-![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_01.png)
-![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_02.png)
-***
-# [Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
-[![Open RStudio in GitHub Codespaces](./docs/badge_rstudio.png)](https://codespaces.new/MichaelAkridge-NOAA/ncei_eds_codespace?quickstart=1)
-
-RStudio Github Codespace with EDS project files. The EDS allows users to download/filter/extract/summarize large amounts of gridded and tabular data given user-defined time stamps and geographical coordinates. The various external environmental data summarized at individual survey sites can aid scientists to assess and understand how living marine resources are impacted by the environmental variabilities. 
-## [(Learn More)](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
-![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/02.png)
-![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/01.png)
 
 ***
 # Oracle Codespace
