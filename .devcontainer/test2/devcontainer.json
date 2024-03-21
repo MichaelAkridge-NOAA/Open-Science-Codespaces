@@ -6,14 +6,18 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
   "postCreateCommand": "",
+  "postStartCommand": "chmod +x ./post_start.sh && ./post_start.sh", // Moved here
   "customizations": {
     "codespaces": {
       "openFiles": []
-    },"postStartCommand": "chmod +x /workspaces/Open-Science-Codespaces/.devcontainer/test/workspace/post_start.sh && /workspaces/Open-Science-Codespaces/.devcontainer/test/workspace/post_start.sh",
+    },
     "vscode": {
       "extensions": [
-        "ms-toolsai.jupyter","ms-python.python","Ikuyadeu.r"
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "Ikuyadeu.r"
       ]
     }
   }
 }
+
