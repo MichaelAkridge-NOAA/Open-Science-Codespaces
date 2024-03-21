@@ -1,11 +1,17 @@
 {
   "name": "Jupyter Book Dev Container",
-  "dockerComposeFile": "docker-compose.yml",
+  "dockerComposeFile": "./docker-compose.yml",
   "service": "jupyterbook",
   "workspaceFolder": "/app",
   "settings": { 
     "terminal.integrated.shell.linux": "/bin/bash"
   },
+  "forwardPorts": [8501],
+  "portsAttributes": {
+    "8787": {
+      "label": "Streamlit App",
+      "onAutoForward": "openPreview"
+    },
   "extensions": [
     "ms-python.python"
   ]

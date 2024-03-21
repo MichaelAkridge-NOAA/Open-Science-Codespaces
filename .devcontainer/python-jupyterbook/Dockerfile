@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the current directory 
-COPY . /app
+COPY ./ ./
 
 # Install Jupyter Book
 RUN pip install --no-cache-dir jupyter-book
