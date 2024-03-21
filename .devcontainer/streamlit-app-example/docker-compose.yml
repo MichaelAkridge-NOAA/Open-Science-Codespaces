@@ -4,6 +4,6 @@ services:
       context: .
     container_name: ncrmp-data-explorer
     volumes:
-      - ./app-data:/workspaces/Open-Science-Codespaces/.devcontainer/streamlit-app-example/app-data
+      - ./app:/app
     ports:
       - "8501:8501"

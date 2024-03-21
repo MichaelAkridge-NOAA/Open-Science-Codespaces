@@ -14,4 +14,4 @@ RUN pip3 install -r requirements.txt
 EXPOSE 8501 
 
 # Define the command to run the application using Streamlit.
-ENTRYPOINT ["streamlit", "run", "app.py"]
+ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]

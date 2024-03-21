@@ -2,6 +2,7 @@
   "name": "NCRMP Data Explorer | Streamlit Python App Example",
   "dockerComposeFile": "./docker-compose.yml",
   "service": "ncrmp-app",
+  "workspaceFolder": "/app",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
