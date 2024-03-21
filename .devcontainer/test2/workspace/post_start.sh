@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Clone the GitHub repository
-git clone https://github.com/coastwatch-training/CoastWatch-Tutorials.git .devcontainer/CoastWatch-Tutorials
+git clone https://github.com/coastwatch-training/CoastWatch-Tutorials.git ./CoastWatch-Tutorials
 
 # Construct the message
 message="## [Click to Open RStudio](https://$CODESPACE_NAME-8787.app.github.dev)
@@ -13,4 +13,4 @@ echo "$message"
 # Append the message to README.md
 echo "$message" >> ./README.md
 
-sleep 10 
+sleep 10
