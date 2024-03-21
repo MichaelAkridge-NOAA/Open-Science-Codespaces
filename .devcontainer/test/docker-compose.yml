@@ -1,0 +1,24 @@
+services:
+  rstudio:
+    build: 
+      context: .
+      dockerfile: Dockerfile.rstudio
+    container_name: rstudio
+    ports:
+      - "8787:8787"
+    volumes:
+      - ./.rstudio_config:/home/rstudio/.config/rstudio
+      - ./workspace:/home/rstudio/workspace
+    environment:
+      - DISABLE_AUTH=true
+  jupyter:
+    build: 
+      context: .
+      dockerfile: Dockerfile.jupyter
+    container_name: jupyter-lab
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./workspace:/home/jovyan/workspace
+    environment:
+      - JUPYTER_ENABLE_LAB=yes

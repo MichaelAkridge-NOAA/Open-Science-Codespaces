@@ -1,0 +1,21 @@
+# Use a Jupyter base image
+FROM jupyter/datascience-notebook:latest
+
+# Install Python packages
+RUN pip install --no-cache-dir \
+    cartopy \
+    cmocean \
+    matplotlib \
+    netCDF4 \
+    pandas \
+    pyproj \
+    requests \
+    shapely \
+    statsmodels \
+    xarray \
+    numpy \
+    seaborn \
+    scikit-learn \
+    geopandas \
+    regionmask
+

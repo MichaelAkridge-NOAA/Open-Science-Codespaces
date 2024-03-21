@@ -1,0 +1,10 @@
+# Use the rocker/geospatial image as the base
+FROM rocker/geospatial:latest
+
+# Install additional R packages
+RUN R -e "install.packages(c('ncdf4', 'httr', 'plyr', 'lubridate', 'parsedate', 'rerddap', 'plotdap', \
+                             'rerddapXtracto', 'graphics', 'maps', 'mapdata', 'RColorBrewer', \
+                             'ggplot2', 'scales', 'dplyr', 'utils', 'Rcurl', 'raster', 'colorRamps', \
+                             'parsedate', 'sp', 'sf', 'reshape2', 'jsonlite', 'rgdal', \
+                             'gridGraphics', 'grid', 'PBSmapping', 'date', 'viridis', \
+                             'openair', 'cmocean'), dependencies=TRUE)"
