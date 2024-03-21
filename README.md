@@ -50,7 +50,7 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 ***
 # Python Codespaces
 ## Python | Streamlit App Codespace Example | NCRMP Data Explorer & Viz Tool
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Fpython-streamlit-app-example%2Fdevcontainer.json)
+[![Open in GitHub Codespaces](./docs/badge_python.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Fpython-streamlit-app-example%2Fdevcontainer.json)
 - This is a codespace example running a python Streamlit App.
 - The app is an Exploratory Data Analysis & Visualization Tool. 
 - Allows users to explore and visualize recent NOAA's National Coral Reef Monitoring Program(NCRMP) data or upload their own.
@@ -65,7 +65,6 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 | Jupyter Data Science  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/devcontainers-community/templates-jupyter-datascience-notebooks) |[devcontainers-community/jupyter-datascience-notebooks](https://github.com/devcontainers-community/templates-jupyter-datascience-notebooks) | 
 | NASA Openscapes Earhdata Cloud Cookbook  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/NASA-Openscapes/earthdata-cloud-cookbook?quickstart=1&editor=jupyter)|[NASA-Openscapes/earthdata-cloud-cookbook](https://github.com/NASA-Openscapes/earthdata-cloud-cookbook) | 
 | Flask  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/codespaces-flask) | [github/codespaces-flask](https://github.com/github/codespaces-flask)| 
-| Streamlit  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/snehankekre/st-codespaces?quickstart=1) | [snehankekre/st-codespaces](https://github.com/snehankekre/st-codespaces/)| 
 | Anaconda  |  | [devcontainers/templates/anaconda](https://github.com/devcontainers/templates/tree/main/src/anaconda)| 
 | Datascience Py & R  |   | [microsoft/datascience-py-r](https://github.com/microsoft/datascience-py-r)| 
 ***
