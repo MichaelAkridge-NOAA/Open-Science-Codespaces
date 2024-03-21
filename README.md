@@ -35,9 +35,9 @@ Just click the button below to quickly start a codespace:
 | RStudio Shiny Server| [![Open in GitHub Codespaces](./docs/badge_rstudio_shiny.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-shiny%2Fdevcontainer.json)   | Adds shiny server | 
 
 ### Screenshots 
-![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_01.png)
-![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/55588538a6e3948e27c2a2914b7018c344e18afe/docs/rs_02.png)
-![](https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces/blob/0938ac017b521a0b6fac11f9be2c0923b4d4b3fb/docs/rs_shiny_01.png)
+![](./docs/rs_01.png)
+![](./docs/rs_02.png)
+![](./docs/rs_shiny_01.png)
 
 ***
 # [Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
@@ -51,9 +51,11 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 # Python Codespaces
 ## Python | Streamlit App Codespace Example | NCRMP Data Explorer & Viz Tool
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Fpython-streamlit-app-example%2Fdevcontainer.json)
-- A Streamlit App Codespace Example showcasing an Exploratory Data Analysis & Visualization Tool. 
+- This is a codespace example running a python Streamlit App.
+- The app is an Exploratory Data Analysis & Visualization Tool. 
 - Allows users to explore and visualize recent NOAA's National Coral Reef Monitoring Program(NCRMP) data or upload their own.
-
+![](./docs/py_data_tool_00.png)
+![](./docs/py_data_tool_01.png)
 
 ## Links to various python based codespaces.
 
