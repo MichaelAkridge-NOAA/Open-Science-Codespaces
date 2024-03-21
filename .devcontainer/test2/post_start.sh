@@ -5,7 +5,7 @@ git clone https://github.com/coastwatch-training/CoastWatch-Tutorials.git /works
 
 # Construct the message
 message="## [Click to Open RStudio](https://$CODESPACE_NAME-8787.app.github.dev)
-## [Click to Open Jupyte(https://$CODESPACE_NAME-8888.app.github.dev?editor=jupyter)
+## [Click to Open Jupyter(https://$CODESPACE_NAME.app.github.dev?editor=jupyter)
 "
 # Echo the message to the terminal
 echo "$message"
