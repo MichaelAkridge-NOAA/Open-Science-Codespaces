@@ -1,9 +1,10 @@
 services:
-  NCRMP Data Explorer:
+  ncrmp-data-explorer:
     build:
       context: .
     container_name: ncrmp-data-explorer
     volumes:
-      - ./app:/app
+      - .:/app
     ports:
       - "8501:8501"
+
