@@ -6,7 +6,7 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
   "postCreateCommand": "",
-  "postStartCommand": "chmod +x ./post_start.sh && ./post_start.sh",
+  "postStartCommand": "chmod +x /workspaces/Open-Science-Codespaces/.devcontainer/test2/post_start.sh && /workspaces/Open-Science-Codespaces/.devcontainer/test2/post_start.sh",
   "customizations": {
     "codespaces": {
       "openFiles": []
