@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Construct the message
-message="## [Click to Open RStudio](https://$CODESPACE_NAME-8501.app.github.dev)
+message="## [Click to Open Streamlit App Example | NCRMP Data Explorer & Viz Tool](https://$CODESPACE_NAME-8501.app.github.dev)
 "
 # Echo the message to the terminal
 echo "$message"

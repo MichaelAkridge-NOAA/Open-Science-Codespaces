@@ -1,5 +1,5 @@
 {
-  "name": "NCRMP Data Explorer | Streamlit Python App Example",
+  "name": "Python Streamlit App Example | NCRMP Data Explorer",
   "dockerComposeFile": "./docker-compose.yml",
   "service": "ncrmp-data-explorer",
   "workspaceFolder": "/app",
