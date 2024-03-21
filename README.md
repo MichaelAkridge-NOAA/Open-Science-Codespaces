@@ -51,9 +51,9 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 # Python Codespaces
 ## Streamlit Python App Codespace Example | Data Explorer & Viz Tool
 [![Open in GitHub Codespaces](./docs/badge_python.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Fpython-streamlit-app-example%2Fdevcontainer.json)
-- This is a codespace example running a python Streamlit App.
-- The app is an Exploratory Data Analysis & Visualization Tool. 
+- Exploratory Data Analysis & Visualization Tool. 
 - Allows users to explore and visualize recent NOAA's National Coral Reef Monitoring Program(NCRMP) data or upload their own.
+- This codespace example runs a python Streamlit App with Pygwalker(https://github.com/Kanaries/pygwalker) for data analysis and data visualization.
 ![](./docs/py_data_tool_00.png)
 ![](./docs/py_data_tool_01.png)
 
@@ -68,14 +68,19 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 | Datascience Py & R  |   | [microsoft/datascience-py-r](https://github.com/microsoft/datascience-py-r)| 
 ***
 # Resources & More Info
-- Learn More
-    - About Github Codespaces: https://github.com/features/codespaces
-    - About using images, dockerfiles, compose, and devcontainers: https://containers.dev/guide/dockerfile
-    - About Docker: https://docs.docker.com/
+## Codespaces/Docker
+- About Github Codespaces: https://github.com/features/codespaces
+- About using images, dockerfiles, compose, and devcontainers: https://containers.dev/guide/dockerfile
+- About Docker: https://docs.docker.com/
 
-The R codespaces use the images from the Rocker Project. For more info, please visit:
-- https://rocker-project.org/images/
-- https://hub.docker.com/u/rocker
+## Python
+- Streamlit (https://streamlit.io/) turns data scripts into shareable web apps
+- Pygwalker(https://github.com/Kanaries/pygwalker)  for data analysis and data visualization
+
+## R
+- The R codespaces use the images from the Rocker Project. For more info, please visit:
+  - https://rocker-project.org/images/
+  - https://hub.docker.com/u/rocker
 
 ----------
 #### Disclaimer
