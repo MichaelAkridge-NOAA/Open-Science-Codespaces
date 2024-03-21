@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  jupyterbook:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "4000:4000"
+    environment:
+      - NAME=JupyterBookDev

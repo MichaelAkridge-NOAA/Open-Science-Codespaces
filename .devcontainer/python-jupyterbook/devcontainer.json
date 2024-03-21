@@ -1,0 +1,13 @@
+{
+  "name": "Jupyter Book Dev Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "jupyterbook",
+  "workspaceFolder": "/app",
+  "settings": { 
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python"
+  ]
+}
+
