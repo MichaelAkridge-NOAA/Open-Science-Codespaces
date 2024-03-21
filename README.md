@@ -51,7 +51,8 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 # Python Codespaces
 ## Python | Streamlit App Codespace Example | NCRMP Data Explorer & Viz Tool
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Fpython-streamlit-app-example%2Fdevcontainer.json)
-
+- A Streamlit App Codespace Example showcasing an Exploratory Data Analysis & Visualization Tool. 
+- Allows users to explore and visualize recent NOAA's National Coral Reef Monitoring Program(NCRMP) data or upload their own.
 
 
 ## Links to various python based codespaces.
