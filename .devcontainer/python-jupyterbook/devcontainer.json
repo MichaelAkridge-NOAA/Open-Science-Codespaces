@@ -11,9 +11,6 @@
     "8787": {
       "label": "Streamlit App",
       "onAutoForward": "openPreview"
-    },
-  "extensions": [
-    "ms-python.python"
-  ]
+    }
 }
 
