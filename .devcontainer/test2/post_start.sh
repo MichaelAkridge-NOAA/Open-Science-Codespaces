@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Clone the GitHub repository
-git clone https://github.com/coastwatch-training/CoastWatch-Tutorials.git .devcontainer/CoastWatch-Tutorials
+git clone https://github.com/coastwatch-training/CoastWatch-Tutorials.git ./CoastWatch-Tutorials
 
 # Construct the message
 message="## [Click to Open RStudio](https://$CODESPACE_NAME-8787.app.github.dev)
