@@ -4,6 +4,6 @@ services:
       context: .
     container_name: ncrmp-data-explorer
     volumes:
-      - ./app-data:/app-data
+      - ./app-data:/workspace/app-data
     ports:
       - "8501:8501"
