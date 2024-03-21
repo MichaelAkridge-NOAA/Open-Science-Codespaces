@@ -5,7 +5,7 @@ import streamlit as st
 import pygwalker as pyg
 
 # Directory containing predefined datasets
-DATA_DIR = "app-data"
+DATA_DIR = "app"
 
 # Set up the page config
 st.set_page_config(
