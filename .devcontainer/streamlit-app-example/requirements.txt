@@ -1,0 +1,3 @@
+streamlit
+pandas
+pygwalker @ git+https://github.com/Kanaries/pygwalker.git

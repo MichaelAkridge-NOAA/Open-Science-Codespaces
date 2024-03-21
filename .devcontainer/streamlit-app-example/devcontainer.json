@@ -1,0 +1,16 @@
+{
+  "name": "NCRMP Data Explorer | Streamlit Python App Example",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "ncrmp-app",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "forwardPorts": [8501],
+  "portsAttributes": {
+    "8787": {
+      "label": "Streamlit App",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
+
