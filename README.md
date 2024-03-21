@@ -16,7 +16,7 @@ Quick & Easy Cloud Working Environments(Codespaces). This repo setups Github Cod
     - Shiny Server
     - [Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
 2. **[Python Codespaces](#python-codespaces)**
-    - [Python Streamlit App Example | Data Explorer & Viz Tool](#python-streamlit-app-codespace-example--ncrmp-data-explorer--viz-tool)
+    - [Python Streamlit App Example | Data Explorer & Viz Tool](#python-codespaces)
     - [Other Python Codespaces](#links-to-various-python-based-codespaces)
 4. **[Resources, Links & More Info](#resources-more-info)**
 
