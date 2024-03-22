@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Clone the GitHub repository
-git clone https://github.com/coastwatch-training/CoastWatch-Tutorials.git /workspaces/Open-Science-Codespaces/CoastWatch-Tutorials
+git clone https://github.com/coastwatch-training/CoastWatch-Tutorials.git /home/rstudio/workspace/CoastWatch-Tutorials
 
 # Construct the message
 message="

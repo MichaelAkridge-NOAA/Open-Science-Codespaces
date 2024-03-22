@@ -1,0 +1,22 @@
+{
+  "name": "test Codespace",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "rstudio",
+  "workspaceFolder": "/home/rstudio/workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": {
+      "label": "rstudio",
+      "onAutoForward": "openPreview"
+    }
+  },
+"postStartCommand": "chmod +x /home/rstudio/workspace/post_start.sh && /home/rstudio/workspace/post_start.sh",
+  "extensions": ["ms-toolsai.jupyter",
+        "ms-python.python",
+        "Ikuyadeu.r"]
+}
+
