@@ -23,11 +23,11 @@ Quick & Easy Cloud Working Environments(Codespaces). This repo setups Github Cod
     - [Other Python Codespaces](#links-to-various-python-based-codespaces)
 4. **[Resources, Links & More Info](#resources-more-info)**
 
+### Looking for More? Try the Codespace Designer
 <a href="https://michaelakridge-noaa.github.io/codespace-designer/" align="right">
-<img src="https://github.com/MichaelAkridge-NOAA/codespace-designer/blob/1d07bea79fa0034c84a759061f353b3c77dcefb3/docs/button.png" alt="Open Codespace Designer"  align="right">
+<img src="https://github.com/MichaelAkridge-NOAA/codespace-designer/blob/1d07bea79fa0034c84a759061f353b3c77dcefb3/docs/button.png" alt="Open Codespace Designer">
 </a>
 
-### Looking for More? Try the Codespace Designer
 - Use to configure a GitHub Codespace environment
 - Powered by Github Pages to help design a codespace devcontainer file with NMFS-Opensci data science images
   - Link: https://michaelakridge-noaa.github.io/codespace-designer/
