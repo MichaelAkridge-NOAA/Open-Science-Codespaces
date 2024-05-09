@@ -1,5 +1,5 @@
 {
-  "name": "RStudio Codespace",
+  "name": "hot-fix-testRStudio Codespace",
   "dockerComposeFile": "./docker-compose.yml",
   "service": "rstudio",
   "workspaceFolder": "/home/rstudio/workspace",
