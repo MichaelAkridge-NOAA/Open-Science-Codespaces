@@ -72,6 +72,7 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 
 | Codespace  | QuickStart Link | Description | 
 | ----------- | ----------- |----------- |
+|Streamlit Python App Codespace Example | [![Open in GitHub Codespaces](./docs/badge_python.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Fpython-streamlit-app-example%2Fdevcontainer.json) | Data Explorer & Viz Tool App| 
 | Jupyter Notebook  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/codespaces-jupyter)  |[github/codespaces-jupter](https://github.com/github/codespaces-jupyter) | 
 | Jupyter Data Science  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/devcontainers-community/templates-jupyter-datascience-notebooks) |[devcontainers-community/jupyter-datascience-notebooks](https://github.com/devcontainers-community/templates-jupyter-datascience-notebooks) | 
 | Flask  | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/codespaces-flask) | [github/codespaces-flask](https://github.com/github/codespaces-flask)| 
