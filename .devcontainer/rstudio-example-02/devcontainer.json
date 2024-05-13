@@ -1,0 +1,45 @@
+{
+  // Name of the Dev Container
+  "name": "RStudio Codespace - Example 02",
+
+  // Image to use for the container
+  "image": "rocker/rstudio:latest",
+
+  // Default workspace folder within the container
+  "workspaceFolder": "/home/rstudio/workspace",
+
+  // Settings for the integrated terminal
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+
+  // Ports to be forwarded from the container to the host
+  "forwardPorts": [8787],
+
+  // Attributes for the forwarded ports
+  "portsAttributes": {
+    "8787": {
+      "label": "rstudio",
+      "onAutoForward": "openPreview"
+    }
+  },
+
+  // Command to run after the container starts. Runs script to add a link to the RStudio
+  "postStartCommand": "chmod +x /home/rstudio/workspace/post_start.sh && /home/rstudio/workspace/post_start.sh",
+
+  // List of extensions to be installed
+  "extensions": [],
+
+  // Mounting volumes
+  "mounts": [
+    "source=${localWorkspaceFolder}/.rstudio_config,target=/home/rstudio/.config/rstudio,type=bind",
+    "source=${localWorkspaceFolder}/workspace,target=/home/rstudio/workspace,type=bind",
+    "source=${localWorkspaceFolder}/other_dir,target=/other_dir,type=bind"
+  ],
+
+  // Environment variables
+  "remoteEnv": {
+    "DISABLE_AUTH": "true"
+  }
+}
+
