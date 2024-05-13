@@ -19,12 +19,12 @@
   // Attributes for the forwarded ports
   "portsAttributes": {
     "8787": {
-      "label": "rserver",
+      "label": "RStudio",
       "onAutoForward": "openPreview"
     }
   },
   "postAttachCommand": {
-	"rstudio-start": "rserver"
+	"rstudio-start": "rserver --auth-none=1"
    },
   // Command to run after the container starts. Runs script to add a link to the RStudio
   "postStartCommand": "chmod +x /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-02/post_start.sh && /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-02/post_start.sh",
