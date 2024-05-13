@@ -25,7 +25,7 @@
   },
 
   // Command to run after the container starts. Runs script to add a link to the RStudio
-  "postStartCommand": "chmod +x post_start.sh && post_start.sh",
+  "postStartCommand": "chmod +x /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-02/post_start.sh && /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-02/post_start.sh",
 
   // Environment variables
   "remoteEnv": {
