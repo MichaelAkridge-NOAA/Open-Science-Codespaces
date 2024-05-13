@@ -23,15 +23,9 @@
       "onAutoForward": "openPreview"
     }
   },
-  "postAttachCommand": {
-	"rstudio-start": "rserver --auth-none=1"
-   },
+"postAttachCommand": "rserver --server-user=rstudio --auth-none=1",
   // Command to run after the container starts. Runs script to add a link to the RStudio
   "postStartCommand": "chmod +x /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-02/post_start.sh && /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-02/post_start.sh",
 
-  // Environment variables
-  "remoteEnv": {
-    "DISABLE_AUTH": "true"
-  }
 }
 
