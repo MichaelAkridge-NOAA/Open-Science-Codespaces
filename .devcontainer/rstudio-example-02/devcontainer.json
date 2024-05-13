@@ -6,7 +6,7 @@
   "image": "rocker/rstudio:latest",
 
   // Default workspace folder within the container
-  "workspaceFolder": "/home/rstudio/workspace",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
   // Settings for the integrated terminal
   "settings": {
@@ -25,16 +25,13 @@
   },
 
   // Command to run after the container starts. Runs script to add a link to the RStudio
-  "postStartCommand": "chmod +x /home/rstudio/workspace/post_start.sh && /home/rstudio/workspace/post_start.sh",
-
-  // List of extensions to be installed
-  "extensions": [],
+  "postStartCommand": "chmod +x /workspaces/${localWorkspaceFolderBasename}/workspace/post_start.sh && /workspaces/${localWorkspaceFolderBasename}/workspace/post_start.sh",
 
   // Mounting volumes
   "mounts": [
     "source=${localWorkspaceFolder}/.rstudio_config,target=/home/rstudio/.config/rstudio,type=bind",
-    "source=${localWorkspaceFolder}/workspace,target=/home/rstudio/workspace,type=bind",
-    "source=${localWorkspaceFolder}/other_dir,target=/other_dir,type=bind"
+    "source=${localWorkspaceFolder}/workspace,target=/workspaces/${localWorkspaceFolderBasename}/workspace,type=bind",
+    "source=${localWorkspaceFolder}/other_dir,target=/workspaces/${localWorkspaceFolderBasename}/other_dir,type=bind"
   ],
 
   // Environment variables
