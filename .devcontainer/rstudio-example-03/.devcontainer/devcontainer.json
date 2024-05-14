@@ -1,0 +1,18 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/rocker-org/devcontainer-features/rstudio-server:0": {
+            "singleUser": true
+        }
+    },
+    "postAttachCommand": "rserver",
+    "forwardPorts": [
+        8787
+    ],
+    "portsAttributes": {
+        "8787": {
+            "label": "RStudio IDE"
+        }
+    }
+}
+
