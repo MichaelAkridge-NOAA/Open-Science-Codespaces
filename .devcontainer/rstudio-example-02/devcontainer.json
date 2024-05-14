@@ -1,31 +1,19 @@
 {
-  // Name of the Dev Container
-  "name": "RStudio Codespace - Example 02",
-
-  // Image to use for the container
-  "image": "rocker/rstudio:latest",
-
-  // Default workspace folder within the container
-  "workspaceFolder": "/workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-02",
-
-  // Settings for the integrated terminal
+  "name": "RStudio Verse Codespace",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "rstudio",
+  "workspaceFolder": "/home/rstudio/workspace",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
-
-  // Ports to be forwarded from the container to the host
   "forwardPorts": [8787],
-
-  // Attributes for the forwarded ports
   "portsAttributes": {
     "8787": {
-      "label": "RStudio",
+      "label": "rstudio",
       "onAutoForward": "openPreview"
     }
   },
-"postAttachCommand": "rserver --server-user=rstudio --auth-none=1",
-  // Command to run after the container starts. Runs script to add a link to the RStudio
-  "postStartCommand": "chmod +x /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-02/post_start.sh && /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-02/post_start.sh",
-
+"postStartCommand": "chmod +x /home/rstudio/workspace/post_start.sh && /home/rstudio/workspace/post_start.sh",
+  "extensions": []
 }
 
