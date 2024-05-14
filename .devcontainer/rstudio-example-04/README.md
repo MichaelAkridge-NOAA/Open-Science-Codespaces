@@ -3,7 +3,7 @@
 - Run the commands and rebuild 
 ```
 mkdir -p .devcontainer/
-wget -P .devcontainer https://raw.githubusercontent.com/MichaelAkridge-NOAA/Open-Science-Codespaces/486bc7fc5317f856e7f075162360408117cbcc86/.devcontainer/rstudio-example-04/devcontainer.json
+wget -P .devcontainer https://raw.githubusercontent.com/MichaelAkridge-NOAA/Open-Science-Codespaces/main/.devcontainer/rstudio-example-04/devcontainer.json
 ```
 
 ## Manually Install 
