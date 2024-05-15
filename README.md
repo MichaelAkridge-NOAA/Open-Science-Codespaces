@@ -1,5 +1,5 @@
 # Open Science Codespaces
-<img src="./docs/logo.JPG" align="right" alt="logo" width="400"/>
+<img src="./docs/logo_02.png" align="right" alt="logo" width="400"/>
 
 Quick & Easy Cloud Working Environments(Codespaces). This repo setups Github Codespaces for R/RStudio, python and more. These can be used for
 - Reproducible Science Setups
