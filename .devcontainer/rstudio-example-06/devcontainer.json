@@ -1,5 +1,5 @@
 {
-  "name": "RStudio Verse Codespace Example 02",
+  "name": "RStudio Verse Codespace Example 06",
   "dockerComposeFile": "./docker-compose.yml",
   "service": "rstudio",
   "workspaceFolder": "/home/rstudio/workspace",
