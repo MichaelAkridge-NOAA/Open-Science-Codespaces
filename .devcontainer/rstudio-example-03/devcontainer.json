@@ -7,12 +7,12 @@
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
     },
-    "remoteUser": "rstudio",
+    "remoteUser": "root",
     "forwardPorts": [8787],
     "remoteEnv": {
         "DISABLE_AUTH": "true"
     },
-    "onCreateCommand": "echo 'www-frame-origin=same' >> /etc/rstudio/rserver.conf && echo 'auth-none=1' >> /etc/rstudio/rserver.conf && rstudio-server restart",
+    "onCreateCommand": "echo 'www-frame-origin=same' >> /etc/rstudio/rserver.conf && echo 'auth-none=1' >> /etc/rstudio/rserver.conf && rstudio-server restart && chown -R rstudio:rstudio /home/rstudio /workspaces",
     "postStartCommand": "chmod +x /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03/post_start.sh && /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03/post_start.sh"
 }
 
