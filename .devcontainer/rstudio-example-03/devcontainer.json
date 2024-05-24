@@ -8,11 +8,6 @@
   // Default workspace folder within the container
   "workspaceFolder": "/workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03",
 
-  // Settings for the integrated terminal
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
-
   // Ports to be forwarded from the container to the host
   "forwardPorts": [8787],
 
@@ -22,5 +17,7 @@
       "label": "RStudio"
     }
   },
+  "postAttachCommand": "rserver --server-user=rstudio --auth-none=1",
   "postStartCommand": "chmod +x /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03/post_start.sh && /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03/post_start.sh"
 }
+

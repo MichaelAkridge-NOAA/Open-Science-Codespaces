@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Start the RStudio server with no authentication
-rserver --server-user=rstudio --auth-none=1 &
-
 # Construct the message
 message="## [Click to Open RStudio](https://$CODESPACE_NAME-8787.app.github.dev)"
 echo "Debug: Constructed message."
