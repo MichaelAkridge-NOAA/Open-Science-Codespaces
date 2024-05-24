@@ -25,7 +25,7 @@
   },
 "postAttachCommand": "rserver --server-user=rstudio --auth-none=1",
   // Command to run after the container starts. Runs script to add a link to the RStudio
-  "postStartCommand": "chmod +x /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-02/post_start.sh && /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-02/post_start.sh",
+  "postStartCommand": "chmod +x /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03/post_start.sh && /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03/post_start.sh",
 
 }
 
