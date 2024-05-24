@@ -6,7 +6,7 @@
   "image": "rocker/rstudio:latest",
 
   // Default workspace folder within the container
-  "workspaceFolder": "/workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-02",
+  "workspaceFolder": "/workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03",
 
   // Settings for the integrated terminal
   "settings": {
