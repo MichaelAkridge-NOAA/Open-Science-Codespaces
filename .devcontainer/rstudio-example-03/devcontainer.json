@@ -19,8 +19,7 @@
   // Attributes for the forwarded ports
   "portsAttributes": {
     "8787": {
-      "label": "RStudio",
-      "onAutoForward": "openPreview"
+      "label": "RStudio"
     }
   },
 "postAttachCommand": "rserver --server-user=rstudio --auth-none=1",
