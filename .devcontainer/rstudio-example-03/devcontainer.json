@@ -1,18 +1,32 @@
 {
-    "name": "RStudio Codespace - Example 03",
-    "image": "rocker/rstudio",
-    "appPort": [8787],
-    "runArgs": ["--init"],
-    "workspaceFolder": "/workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03",
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-    },
-    "remoteUser": "root",
-    "forwardPorts": [8787],
-    "remoteEnv": {
-        "DISABLE_AUTH": "true"
-    },
-    "onCreateCommand": "echo 'www-frame-origin=same' >> /etc/rstudio/rserver.conf && echo 'auth-none=1' >> /etc/rstudio/rserver.conf && rstudio-server restart && chown -R rstudio:rstudio /home/rstudio /workspaces",
-    "postStartCommand": "chmod +x /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03/post_start.sh && /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03/post_start.sh"
+  // Name of the Dev Container
+  "name": "RStudio Codespace - Example 03",
+
+  // Image to use for the container
+  "image": "rocker/rstudio:4.1.1", // Specify a known working version of the image
+
+  // Default workspace folder within the container
+  "workspaceFolder": "/workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03",
+
+  // Settings for the integrated terminal
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+
+  // Ports to be forwarded from the container to the host
+  "forwardPorts": [8787],
+
+  // Attributes for the forwarded ports
+  "portsAttributes": {
+    "8787": {
+      "label": "RStudio"
+    }
+  },
+
+  // Command to run after the container attaches. Ensures RStudio server starts without authentication
+  "postAttachCommand": "rserver --server-user=rstudio --auth-none=1",
+
+  // Command to run after the container starts. Runs script to add a link to the RStudio
+  "postStartCommand": "chmod +x /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03/post_start.sh && /workspaces/Open-Science-Codespaces/.devcontainer/rstudio-example-03/post_start.sh"
 }
 
