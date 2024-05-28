@@ -10,6 +10,9 @@ Quick & Easy Cloud Working Environments(Codespaces). This repo setups Github Cod
 ### Contact
 - Michael.Akridge@noaa.gov
 
+### Presentation
+- Checkout a recent <b><a href="./docs/20240528_Presentation_Codespaces_for_Open_Science.pdf" align="right">Presentation on Codespaces for Open Science  </a></b>
+
 ### List of Codespaces
 1. **[R Codespaces](#r-codespaces)**
     - RStudio
