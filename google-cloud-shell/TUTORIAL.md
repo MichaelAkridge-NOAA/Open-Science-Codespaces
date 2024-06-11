@@ -12,7 +12,7 @@ Check out the NMFS-OpenSci Image Repository for more details:
 - Less than 5 mins
 
 ## Step 1: Running the Environment
-In your terminal <walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon> below, run the following command
+In your terminal <walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon> below, run the following command:
 ```
 docker compose up
 ```
@@ -36,6 +36,10 @@ Docker Compose is a tool that allows you to define and manage Docker application
 Once the container is running, you can visit it by::
 - Clicking the Web Preview button <walkthrough-web-preview-icon></walkthrough-web-preview-icon>
 - and select "Preview on port 8080" To Access your Environment
+
+### FAQ: How to Tell if its running?
+You should see a message in the terminal once it's ready, similar to:
+"py-rocket-base  | [I 2024-06-11 02:01:34.895 ServerApp] Jupyter Server 2.14.1 is running at:"
 
 ## Congratulations
 That's it! As you can see it's very easy to get started with Google Cloud Shell and container images.
