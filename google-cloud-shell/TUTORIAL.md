@@ -22,7 +22,7 @@ Docker Compose is a tool that allows you to define and manage Docker application
 - Facilitates reproducible environments
 
 ## Step 1: Running the Environment
-In your terminal below, run the following command
+In your terminal <walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon> below, run the following command
 ```
 docker compose up
 ```
@@ -33,10 +33,9 @@ This command will:
 - And starts up Jupyter Lab & RStudio with the specified settings.
 
 ## Step 2: Access Jupyter Lab & RStudio
-Once the container is running, you can visit it by following these steps:
-- Click the Web Preview button <walkthrough-web-preview-icon></walkthrough-web-preview-icon>and select "Preview on port..." To Access your Environment
-- 
-test web-preview-icon test
+Once the container is running, you can visit it by::
+- Clicking the Web Preview button <walkthrough-web-preview-icon></walkthrough-web-preview-icon>
+- and select "Preview on port 8080" To Access your Environment
 
 ## Congratulations 
 Thats it! 
