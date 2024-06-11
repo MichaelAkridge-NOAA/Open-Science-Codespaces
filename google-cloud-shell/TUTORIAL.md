@@ -21,6 +21,8 @@ Docker Compose is a tool that allows you to define and manage Docker application
 - Provides a single command to start all services
 - Facilitates reproducible environments
 
+--- 
+
 # Step 1: Running the Environment
 In your terminal below, enter and run the following command
 ```
@@ -31,6 +33,8 @@ This command will:
 - Create and start the py-rocket-base container.
 - Map port 8888 on your host to port 8888 in the container.
 - And starts up Jupyter Lab & RStudio with the specified settings.
+
+--- 
 
 # Step 2: Access Jupyter Lab & RStudio
 Once the container is running, you can visit it by following these steps, 
