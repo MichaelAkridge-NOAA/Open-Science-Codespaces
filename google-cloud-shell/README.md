@@ -11,7 +11,7 @@ This tutorial was made to help users explore NMFS-OpenSci container images and t
 ### Tutorial 02: Want more? Email me ideas, and Let me know
 - michael.akridge@noaa.gov
 
-## More info on Google Cloud Shell:
+### More info on Google Cloud Shell:
 - https://cloud.google.com/shell/docs/how-cloud-shell-works
 - https://cloud.google.com/shell/docs/open-in-cloud-shell
 - https://cloud.google.com/shell/docs/configuring-cloud-shell#environment_customization
