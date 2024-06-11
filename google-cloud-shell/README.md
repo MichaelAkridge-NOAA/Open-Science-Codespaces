@@ -4,9 +4,10 @@ This tutorial was made to help users explore Google Cloud & NMFS-OpenSci contain
 
 ## Start a Google Cloud Shell Tutorial
 ### Tutorial 01: How to Run Jupyterlab w/ RStudio (py-rocket-base) Environment
-- Time to complete: ~ 3 mins
 
 [![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2FMichaelAkridge-NOAA%2FOpen-Science-Codespaces&cloudshell_print=cloud-shell-readme.txt&cloudshell_workspace=google-cloud-shell&cloudshell_tutorial=TUTORIAL.md)
+
+- Time to complete: ~ 3 mins
 
 #### Screenshots
 <img src="./docs/s01a.png"/>
