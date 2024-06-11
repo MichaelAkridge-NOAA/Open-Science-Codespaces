@@ -24,7 +24,7 @@ Docker Compose is a tool that allows you to define and manage Docker application
 ## Step 1: Running the Environment
 In your terminal below, run the following command
 ```
-docker-compose up
+docker compose up
 ```
 This command will:
 - Pull the py-rocket-base image from Container Registry if it doesn't already exist.
