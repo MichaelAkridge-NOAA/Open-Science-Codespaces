@@ -3,10 +3,10 @@ services:
     image: ghcr.io/nmfs-opensci/container-images/py-rocket-base:latest
     container_name: py-rocket-base
     ports:
-      - "8080:8080"
+      - "8888:8888"
     volumes:
       - .:/home/jovyan
     command: >
-      bash -c "jupyter lab --ip=0.0.0.0 --port=8080 --allow-root --no-browser --NotebookApp.token='' --NotebookApp.password=''"
+      bash -c "jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser --NotebookApp.token='' --NotebookApp.password=''"
     environment:
       - JUPYTER_ENABLE_LAB=yes
