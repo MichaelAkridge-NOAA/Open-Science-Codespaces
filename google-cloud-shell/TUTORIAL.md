@@ -1,10 +1,10 @@
 # Welcome to your Google Cloud Shell Open Science Tutorial!
 
-This tutorial was made to help users explore NMFS-OpenSci container images and environment tailored for open science and reproducible research.
+This tutorial was made to help users explore NMFS-OpenSci container images and environments tailored for open science & reproducible research.
 Check out the NMFS-OpenSci Image Repository for more details:
 - https://github.com/nmfs-opensci/container-images
 
-And Github Codespaces with Examples Here:
+And Open-Sci Codespaces for More Examples:
 - https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces
 
 ## Info
@@ -26,14 +26,12 @@ Docker Compose is a tool that allows you to define and manage Docker application
 In your terminal below, enter and run the following command
 ```
 docker-compose up
-
 ```
 This command will:
-- Pull the py-rocket-base image from GitHub Container Registry if it doesn't already exist locally.
+- Pull the py-rocket-base image from Container Registry if it doesn't already exist.
 - Create and start the py-rocket-base container.
 - Map port 8888 on your host to port 8888 in the container.
-- Mount the current directory to /home/jovyan in the container.
-- Run Jupyter Lab & RStudio with the specified settings.
+- And starts up Jupyter Lab & RStudio with the specified settings.
 
 ## Step 2: Access Jupyter Lab & RStudio
 Once the container is running, you can visit it by following these steps, 
@@ -41,4 +39,5 @@ Once the container is running, you can visit it by following these steps,
 - You should see the JupyterLab interface, ready for use.
 
 ### Troubleshooting
-Port Already in Use: If you get an error about port 8888 being in use, try changing the port number in the ports section of the docker-compose.yml file and rerun docker-compose up.
+Port Already in Use: 
+- If you get an error about port 8888 being in use, try changing the port number in the ports section of the docker-compose.yml file and rerun docker-compose up.
