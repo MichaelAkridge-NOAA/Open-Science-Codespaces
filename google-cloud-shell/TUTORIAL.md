@@ -8,9 +8,14 @@ Check out the NMFS-OpenSci Image Repository for more details:
 - Using Docker Compose to set up and run services
 - And deploy a pre-configured open science environment that launches Jupyter Lab with RStudio
 
-### Time 
+### Time Needed
 - Less than 5 mins
 
+## Step 1: Running the Environment
+In your terminal <walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon> below, run the following command
+```
+docker compose up
+```
 ### What is Docker Compose?
 
 Docker Compose is a tool that allows you to define and manage Docker applications. With a simple YAML file, you can configure your application's services, networks, and volumes.
@@ -21,12 +26,7 @@ Docker Compose is a tool that allows you to define and manage Docker application
 - Provides a single command to start all services
 - Facilitates reproducible environments
 
-## Step 1: Running the Environment
-In your terminal <walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon> below, run the following command
-```
-docker compose up
-```
-This command will:
+### This command will:
 - Pull the 'py-rocket-base' image from the NMFS Open-Sci Github Container Registry
 - Create and start the py-rocket-base container.
 - Maps port 8080 on the shell host to port 8080 in the container.
