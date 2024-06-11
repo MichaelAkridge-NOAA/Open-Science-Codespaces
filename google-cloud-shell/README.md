@@ -1,5 +1,5 @@
 # Open Science - Google Cloud Shell Tutorial
-This tutorial was made to help users explore NMFS-OpenSci container images and the environments tailored for open science and reproducible research. Check out the NMFS-OpenSci Image Repository for more details:
+This tutorial was made to help users explore Google Cloud & NMFS-OpenSci container image environments tailored for open science & reproducible research. Check out the NMFS-OpenSci Image Repository for more details:
 - https://github.com/nmfs-opensci/container-images
 
 ## Start the Google Cloud Shell Tutorial
