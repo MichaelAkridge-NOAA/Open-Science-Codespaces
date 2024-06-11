@@ -34,7 +34,7 @@ This command will:
 
 ## Step 2: Access Jupyter Lab & RStudio
 Once the container is running, you can visit it by following these steps:
-- Click the Web Preview button <img src="./docs/web_preview.svg"/> and select "Preview on port..." To View
+- Click the Web Preview button <img src="./docs/web_preview.svg"/> and select "Preview on port..." To Access your Environment
 
 ## Congratulations
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
