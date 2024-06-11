@@ -1,4 +1,0 @@
-#!/bin/sh
-# Run docker-compose
-#cd $REPO_DIR
-docker-compose up -d
