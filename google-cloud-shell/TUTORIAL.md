@@ -37,9 +37,8 @@ Once the container is running, you can visit it by::
 - Clicking the Web Preview button <walkthrough-web-preview-icon></walkthrough-web-preview-icon>
 - and select "Preview on port 8080" To Access your Environment
 
-## Congratulations 
-Thats it! As you can see its very easy to get started with Google Cloud Shell and container images. 
+## Congratulations
+That's it! As you can see it's very easy to get started with Google Cloud Shell and container images.
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
 Next steps:
-Explore using your google cloud environment with data on google cloud:
-- https://console.cloud.google.com/storage/browser/nmfs_odp_pifsc
+Explore using your google cloud environment with data on google cloud for faster performance. Our PIFSC Google Cloud Data Archive: https://console.cloud.google.com/storage/browser/nmfs_odp_pifsc
