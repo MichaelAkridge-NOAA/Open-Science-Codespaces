@@ -34,7 +34,7 @@ This command will:
 
 ## Step 2: Access Jupyter Lab & RStudio
 Once the container is running, you can visit it by following these steps, 
-- open your web browser and go to:
+- open your web browser and go to: https://$PORT-$WEB_HOST
 - You should see the JupyterLab interface, ready for use.
 
 ### Troubleshooting
