@@ -33,10 +33,8 @@ This command will:
 - And starts up Jupyter Lab & RStudio with the specified settings.
 
 ## Step 2: Access Jupyter Lab & RStudio
-Once the container is running, you can visit it by following these steps, 
-- open your web browser and go to: https://$PORT-$WEB_HOST
-- You should see the JupyterLab interface, ready for use.
+Once the container is running, you can visit it by following these steps:
+- Click the Web Preview button <img src="./docs/web_preview.svg"/> and select "Preview on port..." To View
 
-### Troubleshooting
-Port Already in Use: 
-- If you get an error about port 8888 being in use, try changing the port number in the ports section of the docker-compose.yml file and rerun docker-compose up.
+## Congratulations
+<walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
