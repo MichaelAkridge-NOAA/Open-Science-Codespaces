@@ -4,7 +4,7 @@ This tutorial was made to help users explore NMFS-OpenSci container images and e
 Check out the NMFS-OpenSci Image Repository for more details:
 - https://github.com/nmfs-opensci/container-images
 
-### Today you will learn the basics of:
+## Today you will learn the basics of:
 - Using Docker Compose to set up and run services
 - And deploy a pre-configured open science environment that launches Jupyter Lab with RStudio
 
@@ -21,9 +21,7 @@ Docker Compose is a tool that allows you to define and manage Docker application
 - Provides a single command to start all services
 - Facilitates reproducible environments
 
---- 
-
-# Step 1: Running the Environment
+## Step 1: Running the Environment
 In your terminal below, enter and run the following command
 ```
 docker-compose up
@@ -34,9 +32,7 @@ This command will:
 - Map port 8888 on your host to port 8888 in the container.
 - And starts up Jupyter Lab & RStudio with the specified settings.
 
---- 
-
-# Step 2: Access Jupyter Lab & RStudio
+## Step 2: Access Jupyter Lab & RStudio
 Once the container is running, you can visit it by following these steps, 
 - open your web browser and go to:
 - You should see the JupyterLab interface, ready for use.
