@@ -22,7 +22,7 @@ Docker Compose is a tool that allows you to define and manage Docker application
 - Facilitates reproducible environments
 
 ## Step 1: Running the Environment
-In your terminal below, enter and run the following command
+In your terminal below, run the following command
 ```
 docker-compose up
 ```
