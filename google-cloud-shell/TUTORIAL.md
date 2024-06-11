@@ -1,6 +1,44 @@
-# Open Science Codespaces - Google Cloud Shell
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces.git&cloudshell_git_branch=google-cloud&cloudshell_workspace=google-cloud-shell)
+# Welcome to your Google Cloud Shell Open Science Tutorial!
 
-# Open Science Codespaces - Google Cloud Shell test 2
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces.git&cloudshell_git_branch=google-cloud&cloudshell_workspace=google-cloud-shell&force_new_clone=false)
+This tutorial was made to help users explore NMFS-OpenSci container images and environment tailored for open science and reproducible research.
+Check out the NMFS-OpenSci Image Repository for more details:
+- https://github.com/nmfs-opensci/container-images
 
+And Github Codespaces with Examples Here:
+- https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces
+
+## Info
+In this tutorial, you will learn the basics of
+- using Docker Compose to set up and run services
+- & deploy a pre-configured open science environment that launches Jupyter Lab with RStudio.
+
+### What is Docker Compose?
+
+Docker Compose is a tool that allows you to define and manage Docker applications. With a simple YAML file, you can configure your application's services, networks, and volumes.
+
+### Why use Docker Compose?
+
+- Simplifies management
+- Provides a single command to start all services
+- Facilitates reproducible environments
+
+## Step 1: Running the Environment
+In your terminal below, enter and run the following command
+```
+docker-compose up
+
+```
+This command will:
+- Pull the py-rocket-base image from GitHub Container Registry if it doesn't already exist locally.
+- Create and start the py-rocket-base container.
+- Map port 8888 on your host to port 8888 in the container.
+- Mount the current directory to /home/jovyan in the container.
+- Run Jupyter Lab & RStudio with the specified settings.
+
+## Step 2: Access Jupyter Lab & RStudio
+Once the container is running, you can visit it by following these steps, 
+- open your web browser and go to:
+- You should see the JupyterLab interface, ready for use.
+
+### Troubleshooting
+Port Already in Use: If you get an error about port 8888 being in use, try changing the port number in the ports section of the docker-compose.yml file and rerun docker-compose up.
