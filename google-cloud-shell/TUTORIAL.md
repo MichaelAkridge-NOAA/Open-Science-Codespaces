@@ -27,9 +27,9 @@ In your terminal <walkthrough-cloud-shell-icon></walkthrough-cloud-shell-icon> b
 docker compose up
 ```
 This command will:
-- Pull the py-rocket-base image from Container Registry if it doesn't already exist.
+- Pull the 'py-rocket-base' image from the NMFS Open-Sci Github Container Registry
 - Create and start the py-rocket-base container.
-- Map port 8888 on your host to port 8888 in the container.
+- Maps port 8080 on the shell host to port 8080 in the container.
 - And starts up Jupyter Lab & RStudio with the specified settings.
 
 ## Step 2: Access Jupyter Lab & RStudio
@@ -38,5 +38,8 @@ Once the container is running, you can visit it by::
 - and select "Preview on port 8080" To Access your Environment
 
 ## Congratulations 
-Thats it! 
+Thats it! As you can see its very easy to get started with Google Cloud Shell and container images. 
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
+Next steps:
+Explore using your google cloud environment with data on google cloud:
+- https://console.cloud.google.com/storage/browser/nmfs_odp_pifsc
