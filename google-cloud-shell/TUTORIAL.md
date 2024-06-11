@@ -1,16 +1,15 @@
-# Welcome to your Google Cloud Shell Open Science Tutorial!
+# Welcome to Your Google Cloud Shell Open Science Tutorial!
 
 This tutorial was made to help users explore NMFS-OpenSci container images and environments tailored for open science & reproducible research.
 Check out the NMFS-OpenSci Image Repository for more details:
 - https://github.com/nmfs-opensci/container-images
 
-And Open-Sci Codespaces for More Examples:
-- https://github.com/MichaelAkridge-NOAA/Open-Science-Codespaces
+### Today you will learn the basics of:
+- Using Docker Compose to set up and run services
+- And deploy a pre-configured open science environment that launches Jupyter Lab with RStudio
 
-## Info
-In this tutorial, you will learn the basics of
-- using Docker Compose to set up and run services
-- & deploy a pre-configured open science environment that launches Jupyter Lab with RStudio.
+### Time 
+- Less than 5 mins
 
 ### What is Docker Compose?
 
