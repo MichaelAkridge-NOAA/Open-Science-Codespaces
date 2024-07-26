@@ -7,37 +7,30 @@ Quick & Easy Cloud Working Environments(Codespaces). This repo setups Github Cod
 - Portable Development
 - and more!
 
-### Contact
-- Michael.Akridge@noaa.gov
+### Contact: Michael.Akridge@noaa.gov
 
-### Presentation
+### Presentation: 
 - Checkout a recent <b><a href="./docs/20240528_Presentation_Codespaces_for_Open_Science.pdf" align="right">Presentation on Codespaces for Open Science  </a></b>
 
 ### List of Codespaces
-1. **[R Codespaces](#r-codespaces)**
+1. ### **[R Codespaces](#r-codespaces)**
     - RStudio
     - Tidyverse
     - Verse
-    -  Geospatial
+    - Geospatial
     - Shiny Server
-    - [Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
-2. **[Python Codespaces](#python-codespaces)**
-    - [Python Streamlit App Example | Data Explorer & Viz Tool](#python-codespaces)
-    - [Other Python Codespaces](#links-to-various-python-based-codespaces)
-4. **[Resources, Links & More Info](#resources-more-info)**
-
-### Looking for More? Try the Codespace Designer
-<a href="https://michaelakridge-noaa.github.io/codespace-designer/" align="right">
-<img src="https://github.com/MichaelAkridge-NOAA/codespace-designer/blob/1d07bea79fa0034c84a759061f353b3c77dcefb3/docs/button.png" alt="Open Codespace Designer">
-</a>
-
-- Use to configure a GitHub Codespace environment
-- Powered by Github Pages to help design a codespace devcontainer file with NMFS-Opensci data science images
-  - Link: https://michaelakridge-noaa.github.io/codespace-designer/
-***
+    - How to: [Install extra R Packages into Codespace](#faq-how-do-i-to-install-extra-packages-see-examples)
+    - Codespace Example: [Environmental Data Summary (EDS) Project](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
+2. ### **[Python Codespaces](#python-codespaces)**
+    - [Python Codespaces](#links-to-various-python-based-codespaces)
+    - Codespace Example: [Python Streamlit Web App | Data Explorer & Viz Tool](#python-codespaces)
+4. ### **[Resources, Links & More Info](#resources-more-info)**
+    - [Codespace Designer Tool ](#codespace-designer-tool)
+    - [General Info about Codespaces/Docker](#general-info-about-codespacesdocker)
+    - [Python Links](#python-links)
+    - [R Links](#r-links)
 
 # R Codespaces
-
 Just click the button below to quickly start a codespace:
 
 | Codespace   | QuickStart Link  | Description | 
@@ -47,6 +40,11 @@ Just click the button below to quickly start a codespace:
 | RStudio Verse | [![Open in GitHub Codespaces](./docs/badge_rstudio_tidyverse.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-verse%2Fdevcontainer.json)  | Adds tex & publishing-related package to tidyverse | 
 | RStudio Geospatial |   [![Open in GitHub Codespaces](./docs/badge_rstudio_geospatial.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-geospatial%2Fdevcontainer.json)   | Adds geospatial packages | 
 | RStudio Shiny Server| [![Open in GitHub Codespaces](./docs/badge_rstudio_shiny.png)](https://codespaces.new/MichaelAkridge-NOAA/Open-Science-Codespaces?devcontainer_path=.devcontainer%2Frstudio-shiny%2Fdevcontainer.json)   | Adds shiny server | 
+
+### FAQ: How do I to install extra packages? See examples:
+- [RStudio & Install R Packages via Dev Container Features ](.devcontainer/rstudio-example-01/)
+- [RStudio & Install R Packages via dockerfile ](.devcontainer/rstudio-example-02/)
+- [RStudio & Install R Packages via install.R File ](.devcontainer/rstudio-example-05/)
 
 ### Screenshots 
 ![](./docs/rs_01.png)
@@ -83,16 +81,22 @@ RStudio Github Codespace with EDS project files. The EDS allows users to downloa
 | Datascience Py & R  |   | [microsoft/datascience-py-r](https://github.com/microsoft/datascience-py-r)| 
 ***
 # Resources & More Info
-## Codespaces/Docker
+## Codespace Designer Tool 
+<a href="https://michaelakridge-noaa.github.io/codespace-designer/" align="right"><img src="https://github.com/MichaelAkridge-NOAA/codespace-designer/blob/1d07bea79fa0034c84a759061f353b3c77dcefb3/docs/button.png" alt="Open Codespace Designer"></a>
+- Link: https://michaelakridge-noaa.github.io/codespace-designer/
+- Use to configure a GitHub Codespace environment
+- Powered by Github Pages to help design a codespace devcontainer file with NMFS-Opensci data science images
+
+## General Info about Codespaces/Docker
 - About Github Codespaces: https://github.com/features/codespaces
 - About using images, dockerfiles, compose, and devcontainers: https://containers.dev/guide/dockerfile
 - About Docker: https://docs.docker.com/
 
-## Python
+## Python Links
 - Streamlit (https://streamlit.io/) turns data scripts into shareable web apps
 - Pygwalker(https://github.com/Kanaries/pygwalker)  for data analysis and data visualization
 
-## R
+## R Links
 - The R codespaces use the images from the Rocker Project. For more info, please visit:
   - https://rocker-project.org/images/
   - https://hub.docker.com/u/rocker
