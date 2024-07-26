@@ -1,5 +1,5 @@
 # Install RStudio Devcontainer into a Codespace
-- try https://github.com/pwoodworth-jefcoats/climate-indicators
+
 ## Install Via Terminal 
 - Run the commands and rebuild 
 ```
