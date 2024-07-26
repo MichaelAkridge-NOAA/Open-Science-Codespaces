@@ -2,7 +2,6 @@
 
 ## Install Docker from Extension Marketplace
 - Start a codesapce for any project
-- example: https://github.com/pwoodworth-jefcoats/climate-indicators
 
 ## Run Docker Command and create RStudio
 ```
