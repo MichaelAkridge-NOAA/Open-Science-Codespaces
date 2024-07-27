@@ -47,9 +47,11 @@ Just click the button below to quickly start a codespace:
 - [RStudio & Install R Packages via install.R File ](.devcontainer/rstudio-example-05/)
 
 ### Screenshots 
-![](./docs/rs_01.png)
-![](./docs/rs_02.png)
-![](./docs/rs_shiny_01.png)
+<div style="display: flex; flex-wrap: wrap;">
+  <img src="./docs/rs_01.png" alt="RStudio Screenshot 1" width="500" style="margin: 10px;"/>
+  <img src="./docs/rs_02.png" alt="RStudio Screenshot 2" width="500" style="margin: 10px;"/>
+  <img src="./docs/rs_shiny_01.png" alt="RStudio Shiny Screenshot" width="500" style="margin: 10px;"/>
+</div>
 
 ***
 # [Environmental Data Summary (EDS) Codespace](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
@@ -58,7 +60,6 @@ Just click the button below to quickly start a codespace:
 RStudio Github Codespace with EDS project files. The EDS allows users to download/filter/extract/summarize large amounts of gridded and tabular data given user-defined time stamps and geographical coordinates. The various external environmental data summarized at individual survey sites can aid scientists to assess and understand how living marine resources are impacted by the environmental variabilities. 
 ## [(Learn More)](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace)
 ![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/02.png)
-![](https://github.com/MichaelAkridge-NOAA/ncei_eds_codespace/blob/0db0a17a5ac59a0a77fb52568dd1841b45b5213b/docs/01.png)
 ***
 # Python Codespaces
 ## Streamlit Python App Codespace Example | Data Explorer & Viz Tool
