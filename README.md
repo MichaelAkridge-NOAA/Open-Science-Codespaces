@@ -49,8 +49,8 @@ Just click the button below to quickly start a codespace:
 ### Screenshots 
 <div style="display: flex; flex-wrap: wrap;">
   <img src="./docs/rs_01.png" alt="RStudio Screenshot 1"  style="margin: 10px;"/>
-  <img src="./docs/rs_02.png" alt="RStudio Screenshot 2" width="650" style="margin: 10px;"/>
-  <img src="./docs/rs_shiny_01.png" alt="RStudio Shiny Screenshot" width="650" style="margin: 10px;"/>
+  <img src="./docs/rs_02.png" alt="RStudio Screenshot 2" width="750" style="margin: 10px;"/>
+  <img src="./docs/rs_shiny_01.png" alt="RStudio Shiny Screenshot" width="750" style="margin: 10px;"/>
 </div>
 
 ***
