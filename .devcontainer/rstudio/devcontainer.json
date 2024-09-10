@@ -28,8 +28,7 @@
   },
 
   // Command to run after the container starts. Runs script to add a link to the RStudio
-  "postStartCommand": "chmod +x /home/rstudio/workspace/post_start.sh && /home/rstudio/workspace/post_start.sh",
-
+  "postStartCommand": "chmod +x /home/rstudio/workspace/post_start.sh && /home/rstudio/workspace/post_start.sh && docker image prune -f && docker container prune -f && docker builder prune -f",
   // List of extensions to be installed
   "extensions": []
 }
