@@ -16,4 +16,19 @@ else
     echo "Debug: Message already in README.md, not appending."
 fi
 
+# Docker cleanup section
+echo "Debug: Cleaning up Docker resources."
+
+# Remove dangling images
+docker image prune -f
+echo "Debug: Dangling images removed."
+
+# Remove stopped containers
+docker container prune -f
+echo "Debug: Stopped containers removed."
+
+# Remove build cache
+docker builder prune -f
+echo "Debug: Build cache cleaned."
+
 sleep 10
