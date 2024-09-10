@@ -8,6 +8,5 @@ services:
       - ./.rstudio_config:/home/rstudio/.config/rstudio
       - ./workspace:/home/rstudio/workspace
       - ./other_dir:/other_dir
-      - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - DISABLE_AUTH=true
